@@ -15,8 +15,37 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.agencyArray = [[NSMutableArray alloc]init];
+    self.testArray = [[NSMutableArray alloc]init];
+    
+    NSURL *csvURL = [[NSBundle mainBundle] URLForResource: @"KATHYK_TEEN_DATA_9_30_2014" withExtension:@"csv"];
+    CHCSVParser *csvParser = [[CHCSVParser alloc]initWithContentsOfCSVURL:csvURL];
+    [csvParser setRecognizesBackslashesAsEscapes:YES];
+    [csvParser setDelegate:self];
+    [csvParser parse];
+    
+    NSLog(@"%lu", (unsigned long)[self.agencyArray count]);
+}
+
+- (void) parser:(CHCSVParser *)parser didStartLine:(NSUInteger)lineNumber {
+    self.testArray = [[NSMutableArray alloc] init];
+}
+- (void) parser:(CHCSVParser *)parser didReadField:(NSString *)field {
+    [self.testArray addObject:field];
+    
+}
+- (void) parser:(CHCSVParser *)parser didEndLine:(NSUInteger)lineNumber {
+//    NSLog(@"finished line! %@", self.testArray);
+    [self.agencyArray addObject:self.testArray];
+    [self.testArray removeAllObjects];
+}
+
+
+- (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error {
+    NSLog(@"ERROR: %@", error);
 }
 
 - (void)didReceiveMemoryWarning {

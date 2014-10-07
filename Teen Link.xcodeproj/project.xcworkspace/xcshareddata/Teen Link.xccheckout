@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>201419B6-A6D4-4395-B8CE-A692F38D4689</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Teen Link</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1B446D4EB29944E8D9A10860EE218EC80F1E0014</key>
+		<string>https://github.com/awaterhouse/Teen-Link.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Teen Link.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1B446D4EB29944E8D9A10860EE218EC80F1E0014</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/awaterhouse/Teen-Link.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1B446D4EB29944E8D9A10860EE218EC80F1E0014</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1B446D4EB29944E8D9A10860EE218EC80F1E0014</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Teen%20Link</string>
+		</dict>
+	</array>
+</dict>
+</plist>

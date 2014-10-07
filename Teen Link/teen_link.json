@@ -1,0 +1,722 @@
+[
+	{
+		"type": "topic",
+		"name": "Alcohol & Drugs",
+		"short_name": "alcohol",
+		"text": "According to research by the National Institute on Alcohol Abuse and Alcoholism, adolescents who begin drinking before age 15 are four times more likely to develop alcohol dependence than those who begin drinking at age 21.\n\nWarning signs of alcohol and drug dependency/abuse include:\n- Getting drunk/high frequently\n- Lying about alcohol/drug use\n- Blacking out and experiencing lapses in memory\n- Believing that alcohol/drugs are necessary to have fun \n\nIn association with the Washington Recovery Help Line, Teen Link provides help to teens struggling with alcohol, drugs and gambling. Call 1(866)TEENLINK for help between 6-10 pm or call the Washington Recovery Help Line 24 hours/day at 1(866) 789-1511.",
+		"contacts": [
+			{
+				"name": "Evergreen",
+				"number": "1(800) 547-6133",
+				"link": "www.evergreencpg.org",
+				"address": "1929 4th Ave E, Olympia, WA 98506",
+				"hours": "24 hrs"
+			},
+			{
+				"name": "Therapeutic Health Services",
+				"number": "(206) 322-7676",
+				"link": "therapistseattlewa.net",
+				"address": "Multiple Locations",
+				"hours": "Mon - Fri 9:00 am - 5:00 pm"	
+			},
+			{
+				"name": "King County Needle Exchange Schedule",
+				"number": "(206) 296-4649",
+				"link": "www.kingcounty.gov/healthservices/health/communicable/hiv/resources/needle.aspx",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"	
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "At-Risk Youth",
+		"short_name": "at-risk",
+		"text": "Children and young adults who are prone to becoming involved in crime, domestic abuse, drugs and alcohol, early pregnancy, school-related problems and suicide are defined as at-risk youth. In response to growing youth crime and violence rates, many programs have been developed for at-risk youth. Here are some agencies and programs where teens can participate in recreation, education and community-based activities without fear of violence.",
+		"contacts": [
+			{
+				"name": "Atlantic Street Center",
+				"number": "(206) 329-2050",
+				"link": "www.atlanticstreet.org",
+				"address": "2103 S Atlantic St., Seattle, WA 98144",
+				"hours": "Mon, Fri 9:00 am - 5:00 pm, Tue - Thu 11:00 am - 7:00 pm"
+			},
+			{
+				"name": "Safe Futures Youth Center",
+				"number": "(206) 938-9606",
+				"link": "www.sfyc.net",
+				"address": "6337 35th Ave SW, Seattle, WA 98126"
+			},
+			{
+				"name": "YMCA of Greater Seattle",
+				"number": "(206) 382-5003",
+				"link": "www.seattleymca.org",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"			
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "Birth Control/Pregnancy",
+		"short_name": "birth",
+		"text": "According to the National Campaign to Prevent Teen Pregnancy, 3 out of 10 girls in the U.S. get pregnant at least once by the age of 20.\nBecause a woman can get pregnant at any time of the month, abstinence (not having sex) is the only 100% effective method of birth control. If you think you may be pregnant, it’s important to make an appointment to get tested by a health care professional as home pregnancy kits are not always accurate. In Washington State, teens 13 years and older do not need a parent’s/legal guardian’s permission to be tested for pregnancy or STDs, or to access birth control methods. If you are pregnant, seek emotional support from someone you trust and talk with a medical professional about your options. Birth control and sexual health services may also be available at the school-based health centers listed on page 17.",
+		"contacts": [
+			{
+				"name": "Cedar River Clinic",
+				"number": "1(800) 572-4223",
+				"link": "www.cedarriverclinics.org",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"
+			},
+			{
+				"name": "Emergency Contraception Line (Recorded line)",
+				"number": "1(888) 66825283",
+				"link": "www.not-2-late.com"
+			},
+			{
+				"name": "Seattle-King County Teen Clinics",
+				"link": "www.teenclinic.com",
+				"text": "Free and confidential birth control methods, pregnancy testing, STD testing and treatment, and free condoms for youth.",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "Child Abuse",
+		"short_name": "child",
+		"text":	 "Children who experience child abuse and neglect are 25% more likely to experience teen pregnancy and 9 times more likely to become involved in criminal activity. \n~Childhelp \n\nThere are four primary types of child abuse: \n- Physical abuse \n- Emotional abuse \n- Sexual abuse \n- Neglect \n\nWhile the first two categories get the most attention, neglect is the most common form of child abuse, accounting for more than 75% of all cases of child maltreatment. No child or youth deserves to be abused.",
+		"contacts": [
+			{ 
+				"name": "Police Department Emergency Number: 911",
+				"number": ""
+			},
+			{
+				"name": "End Harm - Child Protective Services",
+				"number": "1(866) 3634276",
+				"hours": "24 hrs"
+			},
+			{
+				"name": "Childhelp USA - National Child Abuse Hotline",
+				"number": "1(800) 422-4453"
+			}
+		]
+	},
+	{
+		"type": "opportunity",
+		"name": "Counseling",
+		"short_name": "counseling",
+		"text": "Confidential, low-cost counseling and support groups are available throughout King County. Talking about your problems with a professional or seeking support from others can help you deal with your feelings in a healthy way. In Washington State, youth may access confidential counseling at age 13 without parent/guardian consent.",
+		"contacts": [
+			{
+				"name": "Auburn Youth Resources",
+				"number": "(253) 939-2202",
+				"link": "www.ayr4kids.org",
+				"address": "816 F St SE, Auburn, WA 98002"
+
+			},
+			{
+				"name": "Consejo Counseling & Referral Service",
+				"number": "(206) 461-4880",
+				"link": "www.consejocounseling.org",						"address": "3808 S Angeline St, Seattle, WA 98118",
+				"hours": "Mon - Fri 8:00 am - 5:00 pm"
+	
+			},
+			{
+				"name": "Friends of Youth",
+				"number": "(425) 392-6367",
+				"link": "www.friendsofyouth.org",
+				"address": "13116 NE 132 St, Kirkland, WA 98034"
+
+			},
+			{
+				"name": "24-Hour Crisis Line",
+				"number": "1(866) 4CRISIS",
+				"hours": "24 hrs"
+			},
+			{
+				"name": "Teen Link",
+				"number": "1(866) TEENLINK",
+				"link": "www.866TEENLINK.org",
+				"hours": "6:00 pm - 10:00 pm"
+			}
+		]
+	},
+	{
+		"type": "opportunity",
+		"name": "Culturally Specific Agencies",
+		"short_name": "culturally",
+		"text": "Many agencies are designed to serve and empower specific ethnic/cultural groups. These agencies offer youth leadership and job readiness programs, services for ELL (English Language Learners), interpreters and more. It is best to call each agency and ask about the services they provide.",
+		"contacts": [
+			{
+				"name": "Asian Counseling & Referral Service",
+				"number": "(206) 695-7600",
+				"link": "www.acrs.org",
+				"address": "3639 Martin Luther King Jr Way S, Seattle, Wa 98108",
+				"hours": "Mon - Fri 9:00 am - 6:00 pm"
+			},
+			{
+				"name": "Asian/Pacific Islander Chaya",
+				"number": "1(877) 922-4292",
+				"link": "www.apichaya.org",
+				"hours": "Mon - Fri 9:00 am - 5:00 pm"
+			},
+			{
+				"name": "Chinese Information & Service Center",
+				"number": "(206) 624-5633",
+				"link": "www.cisc-seattle.org",
+				"address": "611 S Lane St, Seattle, WA, 98104",
+				"hours": "Mon - Fri 8:30 am - 5:00 pm"
+	
+			},
+			{
+				"name": "El Centro de la Raza",
+				"number": "(206) 392-9442",
+				"link": "www.elcentrodelaraza.org",
+				"address": "2524 16th Ave S, Seattle, WA 98144"
+				
+
+			},
+			{
+				"name": "Filipino Community of Seattle",
+				"number": "(206) 722-9372",
+				"link": "www.fcseattle.org",
+				"address": "5740 Martin Luther King Jr Way, Seattle, WA 98118"
+				
+
+			},
+			{
+				"name": "Helping Link/Mot Dau Noi",
+				"number": "(206) 568-5160",
+				"link": "www.helpinglink.org",
+				"address": "1032 S Jackson St, Suite C, Seattle, WA 98104",
+				"hours": "Mon - Thu 1:00 pm - 9:00 pm"
+
+			},
+			{
+				"name": "Horn of Africa Services",
+				"number": "(206) 760-0550",
+				"link": "www.hoas.org",
+				"address": "4714 Rainier Ave S, Seattle, WA 98118"
+
+			},
+			{
+				"name": "Jewish Family Service",
+				"number": "(206) 461-3240",
+				"link": "www.jfsseattle.org",
+				"address": "15821 NE 8th St, Suite 210, Bellevue, WA 98008",
+				"hours": "Mon - Fri 9:00 am - 5:00 pm"
+
+			},
+			{
+				"name": "OneAmerica",
+				"number": "(206) 723-2203",
+				"link": "www.weareoneamerica.org",
+				"address": "1225 S Weller St #430, Seattle, WA 98144",
+				"hours": "Mon - Fri 9:00 am - 5:00 pm"
+
+			},
+			{
+				"name": "United Indians of All Tribes",
+				"number": "(206) 285-4425",
+				"link": "www.unitedindians.org",
+				"address": "Multiple locations",
+				"hours": "Mon - Fri 9:00 am - 5:00 pm"
+
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "Dating & Domestic Violence",
+		"short_name": "dating",
+		"text": "Estimates from national studies of teen dating indicate that 1 in 4 teen relationships involve violence. \nDating violence is any form of emotional, verbal, psychological, physical or sexual abuse by a romantic partner. Victims often experience abuse that gets more severe over time as the abuser tries to control or dominate them. \nCharacteristics of an abusive relationship can include: \n- Jealousy and possessiveness \n- Name-calling and put-downs \n- Controlling behavior \n- Pressure to engage in activities (sexual or other) \n- Physical threats to hurt you or themselves \n- Choking, hitting or other injurious behavior \n\nFear, threats, shame and the belief that an abuser’s behavior will change often contribute to the victim feeling unsure about talking to someone about his or her situation. It is important to remember that there is support available. No one deserves to feel unsafe in a romantic relationship.",
+		"contacts": [
+			{
+				"name": "Domestic Abuse Women’s Network (DAWN) Advocacy & Crisis Hotline",
+				"number": "1(877) 465-7234",
+				"link": "www.dawnonline.org",
+				"hours": "24 hrs"
+			},
+			{
+				"name": "Washington State Domestic Violence Hotline",
+				"number": "1(800) 562-6025",
+				"hours": "24 hrs"
+			},
+			{
+				"name": "Domestic Violence Recorded Information Line",
+				"number": "(206) 205-5555"
+			},
+			{
+				"name": "Youth Eastside Services - Dating Violence Program",
+				"number": "(425) 747-4937",
+				"link": "www.youtheastsideservices.org",
+				"address": "Multiple locations",
+				"hours": "24 hr hotline"
+			},
+			{
+				"name": "YWCA Children’s Domestic Violence Program",
+				"number": "(206) 568-7845",
+				"address": "East Cherry DV Unit, Seattle, WA 98122",
+				"hours": "Mon - Fri 9:00 am - 5:00 pm"
+
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "Eating Disorders",
+		"short_name": "eating",
+		"text": "20 million females and 10 million males suffer from a clinically significant eating disorder at some point in their lives, including anorexia, bulimia, binge eating disorder or other associated dietary conditions. \n~ National Eating Disorders Association \n\nEating disorders involve extreme emotions and behaviors surrounding food and weight issues. They can arise from psychological, emotional, social and familial situations, but have no one reason or cause. By controlling food intake, people with eating disorders attempt to gain control over factors such as low self-esteem, feelings of inadequacy and anxiety. Eating disorders can become life threatening, so getting professional help is important.",
+		"contacts": [
+			{
+				"name": "Eating Disorders Anonymous",
+				"link": "www.eatingdisordersanonymous.org"
+			},
+			{
+				"name": "Eating Disorders Northwest",
+				"link": "www.eatingdisordersnw.org"
+			},
+			{
+				"name": "National Eating Disorders Association",
+				"number": "1(800) 931-2237",
+				"link": "www.nationaleatingdisorders.org"
+			},
+			{
+				"name": "Overeaters Anonymous",
+				"number": "(206) 264-5045",
+				"link": "www.seattleoa.org"
+			}
+		]
+	},
+	{
+		"type": "opportunity",
+		"name": "Education",
+		"short_name": "education",
+		"text": "Only 76% of all Washington State public school students from the class of 2013 graduated from high school in 4 years.\n~ WA State Office of Superintendent of Public Instruction \n\nMany teens have difficulties at school and need more support for their education. There are many agencies that offer tutoring programs, testing for learning disabilities, referrals for ELL (English Language Learners) and information about the GED (General Education Development) Certificate.",
+		"contacts": [
+			{
+				"name": "Learning Disabilities Association of Washington",
+				"number": "(425) 882-0820",
+				"link": "www.ldawa.org"
+			},
+			{
+				"name": "Seattle Education Access",
+				"number": "(206) 523-6200",
+				"link": "www.seattleeducationaccess.org",
+				"address": "1406 NE 50th St #202, Seattle, WA 98105"
+
+			},
+			{
+				"name": "YouthSource GED Program",
+				"number": "(206) 477-7010"
+			},
+			{
+				"name": "King County Library System",
+				"number": "1(800) 462-9600",
+				"link": "www.kcls.org"
+			},
+			{
+				"name": "Seattle Public Library System",
+				"number": "(206) 386-4636",
+				"link": "www.spl.org",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"
+
+			}
+		]
+	},
+	{
+		"type": "opportunity",
+		"name": "Employment & Job Training",
+		"short_name": "employment",
+		"text": "The Washington State Department of Labor and Industries estimates that 80% of all teens hold a job at some time during high school. \n- If you are 14 or 15 years old, you can work no more than three hours on a school day. \n- If you are 16 years or older, you can work no more than four hours on a school day. \n- If you are 18 years or older, you may perform any job with no restrictions. \n\nWhen applying for a job it is important to have the following information available: \n- Social Security number \n- Current address and phone number \n- Name and contact information for adults/professionals who you can use as references",
+		"contacts": [
+			{
+				"name": "Seattle Youth Employment Program",
+				"number": "(206) 386-1375"
+			},
+			{
+				"name": "WA State Department of Labor and Industries Teen Workers Information",
+				"link": "http://www.lni.wa.gov/WorkplaceRights/TeenWorkers"
+			},
+			{
+				"name": "YouthForce",
+				"number": "(206) 436-1843",
+				"link": "www.teenjobs.org"
+			},
+			{
+				"name": "Teens in Public Service",
+				"number": "(206) 985-4647",
+				"link": "www.teensinpublicservice.org"
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "GLBTQ",
+		"short_name": "glbtq",
+		"text": "Gay, Lesbian, Bisexual, Transgender and Questioning (GLBTQ) youth are frequently targets of discrimination, violence and bullying/harassment both at school and in the community. Societal prejudice and disapproval from loved ones can be isolating and hurtful to teens that identify as GLBTQ. Support groups, drop-in centers, activities and counseling services are available to promote acceptance and provide a safe environment of understanding.",
+		"contacts": [
+			{
+				"name": "Gay City Health Project LGBT helpline",
+				"number": "(206) 323-LGBT",
+				"link": "www.gaycity.org"
+				
+			},
+			{
+				"name": "Ingersoll Gender Center",
+				"number": "(206) 386-4636",
+				"link": "http://ingersollcenter.org/",
+				"address": "517 E Pike Street, lower floor, Seattle, WA 98122"
+
+			},
+			{
+				"name": "Lambert House",
+				"number": "(206) 322-2515",
+				"link": "www.lamberthouse.org",
+				"address": "1818 15th Ave, Seattle, WA 98122",
+				"hours": "Mon - Fri 4:00 pm - 9:00 pm"
+			},
+			{
+				"name": "Northwest Network of Bisexual, Trans, Lesbian & Gay Survivors of Abuse",
+				"number": "(206) 568-7777",
+				"link": "www.nwnetwork.org",
+				"address": "1122 E Pike St, Seattle, WA 98122"
+			},
+			{
+				"name": "Proud, Out and Wonderful (POW!)",
+				"number": "(206) 325-7724",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"
+			},
+			{
+				"name": "Entre Hermanos",
+				"number": "(206) 322-7700",
+				"link": "http://www.entrehermanos.org/",
+				"address": "1105 23rd Ave, Seattle, WA 98122",
+				"hours": "Mon - Fri 10:00 am - 6:00 pm"
+			},
+			{
+				"name": "Youth Eastside Services - B-Glad",
+				"number": "(425) 747-4937",
+				"link": "www.youtheastsideservices.org",
+				"address": "999 164th Ave NE, Bellevue, WA 98008"
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"name": "Health Concerns",
+		"short_name": "health",
+		"text": "Free, low-cost and pay-what-you-can health care options are available to youth. If you do not want a parent or legal guardian to know you are seeking services, make sure to ask the agencies about their policies regarding confidentiality. Some clinics may require a parent’s insurance information for primary health care even though they may not require this information for confidential birth control and sexual health services.",
+		"contacts": [
+			{
+				"name": "45th Street Clinic",
+				"number": "(206) 633-3350",
+				"link": "www.neighborcare.org",
+				"text": "Homeless Youth Clinic. Accessible to ages 12-23. No appointment is necessary",
+				"address": "1629 N 45th St Seattle, WA 98103",
+				"hours": "Wed, Thu 6:00 pm - 9:00 pm"
+			},
+			{
+				"name": "Country Doctor Free Clinic for Homeless Youth",
+				"number": "(206) 299-1600",
+				"text": "No appointment is necessary. Ages 12-23",
+				"link": "www.countrydoctor.org",
+				"address": "517 E Pike Street, lower floor, Seattle, WA 98122",
+				"hours": "Wed, Thu 6:00 pm - 9:00 pm"
+			},
+			{
+				"name": "Lambert House",
+				"number": "(206) 322-2515",
+				"link": "www.lamberthouse.org",
+				"address": "1818 15th Ave, Seattle, WA 98122",
+				"hours": "Mon - Fri 4:00 pm - 9:00 pm"
+			},
+			{
+				"name": "Northwest Network of Bisexual, Trans, Lesbian & Gay Survivors of Abuse",
+				"number": "(206) 568-7777",
+				"link": "www.nwnetwork.org",
+				"address": "1122 E Pike St, Seattle, WA 98122"
+			},
+			{
+				"name": "Proud, Out and Wonderful (POW!)",
+				"number": "(206) 325-7724",
+				"address": "Multiple Locations",
+				"hours": "Vary by location"
+
+			},
+			{
+				"name": "Entre Hermanos",
+				"number": "(206) 322-7700",
+				"link": "http://www.entrehermanos.org/",
+				"address": "1105 23rd Ave, Seattle, WA 98122",
+				"hours": "Mon - Fri 10:00 am - 6:00 pm"
+
+			},
+			{
+				"name": "Youth Eastside Services - B-Glad",
+				"number": "(425) 747-4937",
+				"link": "www.youtheastsideservices.org",
+				"address": "999 164th Ave NE, Bellevue, WA 98008"
+
+			}
+
+
+		]
+	},
+	{
+		"type": "topic",
+		"short_name": "homelessness",
+		"name": "Homelessness & Runaways",
+		"text": "Current estimates suggest there are more than one and a half million children, teens and young adults trying to survive on U.S. streets today. \n~ National Coalition for the Homeless \n\nRunaway youth come from every socio-economic and racial group in America. More often than not, youth who are homeless have not chosen to live on the streets. Many homeless youth turn to the streets because of a combination of abuse, family problems and dysfunction within their homes that cause them to feel unsafe. Drop-in centers, homeless shelters, hot meal programs, case management and other services are available to help youth take care of themselves and/or get off the streets.",
+		"contacts": [
+			{
+				"name": "King County 2-1-1",
+				"number": "1(800) 621-4636"
+			},
+			{
+				"name": "New Horizons Ministries",
+				"number": "(206) 374-0866",
+				"link": "www.nhmin.org",
+				"hours": "See website for hours and information.",
+				"address": "2709 Third Ave, Seattle, WA 98121"
+			},
+			{
+				"name": "Peace for the Streets by Kids from the Streets",
+				"number": "(206) 726-8500",
+				"link": "www.psks.org",
+				"hours": "Mon-Fri, 11am- 5pm",
+				"address": "1609 19th Avenue, Seattle, WA 98122"
+			}
+		]
+	},
+	{
+		"type": "opportunity",
+		"name": "Leadership & Volunteer Opportunities",
+        "short_name": "leadership",
+		"text": "Volunteering helps to create a stable and cohesive society, increases social harmony among diverse individuals who volunteer together and promotes an individual volunteer’s good health and emotional well-being. \n~ Independent Sector",
+		"contacts": [
+			{
+				"name": "American Red Cross",
+				"number": "(206) 323-2345",
+				"link": "www.redcross.org/wa/seattle"
+			},
+			{
+				"name": "Boys & Girls Clubs of King County",
+				"number": "(206) 436-1800",
+				"link": "www.positiveplace.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Camp Fire Boys & Girls",
+				"number": "1(800) 451-CAMP",
+				"link": "www.campfire-usa.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Seattle Young People’s Project",
+				"number": "(206) 860-9606",
+				"link": "www.sypp.org",
+				"hours": "Mon-Thurs 10am-7pm",
+				"address": "510B Maynard Ave S, Seattle, WA 98104"
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"short_name": "legal",
+		"name": "Legal Services & Youth Rights",
+		"text": "Despite what society and other members of the community may tell you, youth under age 18 do have rights. Specific agencies can provide you with more information about juvenile criminal laws, labor laws, educational rights and emancipation. These agencies advocate for youth and ensure that young adults are treated in a just and fair way.",
+		"contacts": [
+			{
+				"name": "King County Superior Court - Juvenile Court",
+				"number": "(206) 205-9500",
+				"link": "www.kingcounty.gov/courts/juvenilecourt",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Team Child",
+				"number": "211",
+				"link": "www.teamchild.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "King County 2-1-1",
+				"number": "1(800) 621-4636",
+				"link": "",
+				"hours": "Mon-Fri, 8am-5pm",
+				"address": ""
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"short_name": "people",
+		"name": "People with Disabilities",
+		"text": "The Americans with Disabilities Act of 1990 guarantees equal access in employment, public accommodation, transportation, telecommunications and state and local government. Call the numbers below for support, referrals or information about available services.",
+		"contacts": [
+			{
+				"name": "Alliance of People with disAbilities",
+				"number": "(206) 545-7055",
+				"link": "www.disabilitypride.org",
+				"hours": "Mon-Thurs, 9am-4pm. Closed at noon first Tuesday of the month.",
+				"address": "1120 E Terrace Street, Suite 100, Seattle, WA 98122"
+			},
+			{
+				"name": "Center for Children with Special Needs",
+				"number": "(206) 884-5735",
+				"link": "www.cshcn.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Hearing, Speech and Deafness Center",
+				"number": "(206) 323-5770",
+				"link": "www.hsdc.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Washington State Dept. of Services for the Blind",
+				"number": "1(800) 552-7103",
+				"link": "www.dsb.wa.gov",
+				"hours": "",
+				"address": ""
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"short_name": "rape",
+		"name": "Rape & Sexual Assault",
+		"text": "By the age of 18, 1 of every 4 girls and 1 of every 6 boys has been sexually assaulted. \n~ Harborview Center for Sexual Assault and Traumatic Stress \n\nDue to the violence that often accompanies a rape or sexual assault, it is important for a victim to go to the emergency department of their local hospital to be examined for injuries. At the hospital, a social worker will discuss a victim’s options, including that of evidence collection. Because of this, it is helpful if the victim does not shower, clean up or change clothes before having an exam, as doing so may remove any remaining evidence. \n\nAdditionally, the doctor can discuss medications that are available to reduce the chances of contracting a sexually transmitted infection (STI) or getting pregnant. If the victim is under the age of 18, the law requires the police to be notified. However, going to the hospital and submitting a report does not necessarily mean that charges must be filed against the perpetrator or that participation in a legal case must occur. Counselors can talk about available alternatives and help the victim decide what the best choice is going to be for the individual.",
+		"contacts": [
+			{
+				"name": "Harborview Center for Sexual Assault & Traumatic Stress",
+				"number": "(206) 744-1600",
+				"link": "www.hcsats.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Incest Survivors Anonymous (18+)",
+				"number": "(206) 903-9427",
+				"link": "www.siawso.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "King County Sexual Assault Resource Center Crisis Line",
+				"number": "1(888) 99-VOICE",
+				"link": "www.kcsarc.org",
+				"hours": "24 hours",
+				"address": ""
+			},
+			{
+				"name": "Police Department Emergency Number: 911"
+			}
+		]
+	},
+	{
+		"type": "opportunity",
+		"short_name": "recreation",
+		"name": "Recreation & Youth Involvement",
+		"text": "If you are bored and looking for a fun place to hang out after school or on the weekends, there are a number of places for you. Community and recreational centers, drop-in groups, classes and sports leagues for youth are located throughout King County.",
+		"contacts": [
+			{
+				"name": "Arts Corps",
+				"number": "(206) 722-5440",
+				"link": "www.artscorps.org",
+				"hours": "",
+				"address": "4408 Delridge Way SW, Suite 110, Seattle, WA 98106"
+			},
+			{
+				"name": "Bikeworks",
+				"number": "(206) 695-2416",
+				"link": "www.bikeworks.org",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "Garfield Teen Life Center",
+				"number": "(206) 684-4550",
+				"link": "",
+				"hours": "",
+				"address": ""
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"short_name": "stds",
+		"name": "STDs (including HIV/AIDS)",
+		"text": "Compared to older adults, sexually active adolescents and young adults are at a higher risk for acquiring STDs. Recent estimates suggest that 15-24 year olds acquire nearly half of all new STDs. \n~ Center for Disease Control \n\nMany teens are unaware of the dangers associated with sexually transmitted diseases (STDs) and how to prevent or identify them. Talking with your partner about STDs and getting tested regularly are important parts of being sexually active. Myths exist regarding all STDs, but especially Human Immunodeficiency Virus (HIV) and Acquired Immune Deficiency Syndrome (AIDS). You cannot get HIV from hugging, drinking out of a shared glass or using a public toilet. \n\nThere are three primary ways of contracting HIV: \n- Unprotected sex with an infected individual \n- Sharing needles \n- From mother to unborn child",
+		"contacts": [
+			{
+				"name": "Lifelong AIDS Alliance",
+				"number": "(206) 328-8979",
+				"link": "www.llaa.org",
+				"hours": "",
+				"address": "1016 E Pike St, 3rd Floor, Seattle, WA 98122"
+			},
+			{
+				"name": "People of Color Against AIDS Network (POCAAN)",
+				"number": "(206) 322-7061",
+				"link": "",
+				"hours": "",
+				"address": "1609 19th Ave, Seattle, WA 98122"
+			},
+			{
+				"name": "Public Health STD Clinic at Harborview",
+				"number": "(206) 744-3590",
+				"hours": "Mon, Wed, Thurs, Fri 8am-4:30pm Tues 9am-4:30pm",
+				"address": "908 Jefferson St., Seattle, WA 98104"
+			},
+			{
+				"name": "Washington State HIV/AIDS Hotline",
+				"number": "1(800) 272-2437"
+			}
+		]
+	},
+	{
+		"type": "topic",
+		"short_name": "suicide",
+		"name": "Suicide",
+		"text": "According to the Washington State Department of Health, 2 to 3 youth ages 15-24, commit suicide every week in Washington State. \n\nWarning signs for suicide include: \n- Changes in eating and sleeping patterns \n- Dropping hints or talking about suicide; making a plan \n- Giving away prized possessions \n- Being very obsessive and perfectionistic \n- Engaging in risky behaviors (driving recklessly, increased drug and alcohol use/abuse, etc.) \n\nConsider the following questions to help you determine the urgency: \n1. Are there three or more warning signs? \n2. Have the warning signs been present two weeks or longer? \n3. How extreme or severe are the warning signs? \n\nIf you are concerned that you or someone you know may be suicidal, it is important to address the situation immediately. Mentioning suicide will not give the person the idea or push them over the edge. Talking about your concerns can prevent a suicide attempt from occurring and save a life. \n\nHow to Help \nSTEPS 1 & 3 CAN BE USED TO HELP A FRIEND IN ANY SITUATION \n\n1. Show you care \n     - Talk to the person you are concerned about in a caring manner \n     - Be specific about the warning signs you have noticed \n     - Listen without judgment \n\n2. Ask the question directly \n    - “Are you thinking of suicide?” \n\n3. Talk to an adult you trust \n\nThese are the initial steps toward ongoing mental health care. Every situation regarding suicide is different. Call 1(866) TEENLINK to talk to a trained phone worker in more detail about how to get help. \n\nIf you need immediate crisis intervention services or feel like you need to talk to someone right away, these are numbers you can call to discuss your concerns.",
+		"contacts": [
+			{
+				"name": "24-Hour Crisis Line",
+				"number": "1(866) 4CRISIS",
+				"link": "www.crisisclinic.org",
+				"hours": "24/7/365",
+				"address": ""
+			},
+			{
+				"name": "National Suicide Prevention Lifeline",
+				"number": "1(800) 273-TALK",
+				"link": "",
+				"hours": "",
+				"address": ""
+			},
+			{
+				"name": "The Trevor Project - Focus on GLBTQ individuals",
+				"number": "1(866) 4UTREVOR",
+				"link": "www.thetrevorproject.org",
+				"hours": "24 hrs",
+				"address": ""
+			}
+		]
+	}
+
+
+
+
+]

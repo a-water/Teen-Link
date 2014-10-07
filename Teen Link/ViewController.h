@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHCSVParser.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CHCSVParserDelegate>
 
+@property (strong, nonatomic) NSMutableArray *agencyArray;
+@property (strong, nonatomic) NSMutableArray *testArray;
 
 @end
 
