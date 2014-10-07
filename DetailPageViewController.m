@@ -68,21 +68,9 @@
 
 -(void)setupHeader:(NSString*) picName{
     
-    //    UIFont *dinFont = [UIFont fontWithName:@"DINCondensed-Bold" size:32];
-    
     UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 72, self.view.frame.size.width, 122.5)];
-    [headerView setBackgroundColor:[UIColor clearColor]]; //[UIColor colorWithRed:0.561 green:0.231 blue:0.553 alpha:1]]; /*#8f3b8d*/
+    [headerView setBackgroundColor:[UIColor clearColor]];
     
-    //    UILabel *headerLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 40, 175, 61.25)];
-    //    headerLabel.minimumScaleFactor = 0.5;
-    //    headerLabel.adjustsFontSizeToFitWidth = YES;
-    //    headerLabel.font = dinFont;
-    //    headerLabel.textColor = [UIColor whiteColor];
-    //    headerLabel.numberOfLines = 2;
-    //    headerLabel.text = headerName;
-    //
-    //    [headerView addSubview:headerLabel];
-    //    NSString *imageUrl = @"alcohol.png";//[self getImageForHeader:headerName];
     NSURL *imgUrl = [[NSBundle mainBundle]URLForResource:picName withExtension:@"png"];
     UIImage *detailImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:imgUrl]];
     UIImageView *headerImage = [[UIImageView alloc]initWithImage:detailImage];
@@ -93,18 +81,6 @@
     [self.scrollView addSubview:headerView];
 }
 
-//-(NSString*)getImageForHeader:(NSString*)shortName{
-//    NSString *pathToFind = [NSString stringWithFormat:@"%@.png",shortName];
-//    NSFileManager *fileManager = [NSFileManager defaultManager];
-//    if(![fileManager fileExistsAtPath:pathToFind]){
-//        UIAlertView *av = [[UIAlertView alloc]initWithTitle:@"ERROR" message:@"Cannot find image" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-//        [av show];
-//    }
-//
-//    return pathToFind;
-//}
-
-//187
 -(void)setupTextArea:(NSString*) text{
     UIView *textArea = [[UIView alloc]initWithFrame:CGRectMake(0, 184, self.view.frame.size.width, 200)];
     

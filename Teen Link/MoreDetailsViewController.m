@@ -29,7 +29,7 @@
     
     UILabel *detailTextLabel = [[UILabel alloc]init];
 //        detailTextLabel.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1]; /*#0b0849*/
-    detailTextLabel.numberOfLines = 60;
+    detailTextLabel.numberOfLines = 0;
     detailTextLabel.text = self.text;
     detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
     NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys:

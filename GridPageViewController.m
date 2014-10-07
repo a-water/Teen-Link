@@ -250,16 +250,17 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
     DetailPageViewController *DPVC = [segue destinationViewController];
-    DPVC.topicItemArray = [NSMutableArray arrayWithArray:self.topicItemArray];
-    DPVC.opportunityItemArray = [NSMutableArray arrayWithArray:self.opportunityItemArray];
     
     if(self.tableTag == 100){
+        DPVC.topicItemArray = [NSMutableArray arrayWithArray:self.topicItemArray];
         DPVC.headerText = [self.resourceArrayNames objectAtIndex:self.indexRow];
         DPVC.detailTextString = [self.resourceArrayText objectAtIndex:self.indexRow];
         DPVC.isTopic = YES;
     }
     else if(self.tableTag == 200){
+        DPVC.opportunityItemArray = [NSMutableArray arrayWithArray:self.opportunityItemArray];
         DPVC.headerText = [self.opportunityArrayNames objectAtIndex:self.indexRow];
         DPVC.detailTextString = [self.opportunityArrayText objectAtIndex:self.indexRow];
         DPVC.isTopic = NO;
