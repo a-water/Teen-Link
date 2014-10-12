@@ -28,7 +28,6 @@
     [self setupHeader];
     
     UILabel *detailTextLabel = [[UILabel alloc]init];
-//        detailTextLabel.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1]; /*#0b0849*/
     detailTextLabel.numberOfLines = 0;
     detailTextLabel.text = self.text;
     detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
@@ -40,7 +39,6 @@
                                             options:NSStringDrawingUsesLineFragmentOrigin
                                          attributes:attributesDictionary
                                             context:nil];
-    
     detailTextLabel.frame = CGRectMake(15, 208, frame.size.width, frame.size.height);
     detailTextLabel.backgroundColor = [UIColor whiteColor];
 //    detailTextLabel.layer.borderWidth = 1.0f;
@@ -66,22 +64,10 @@
 }
 
 -(void)setupHeader{
-    
-    //    UIFont *dinFont = [UIFont fontWithName:@"DINCondensed-Bold" size:32];
-    
+        
     UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 72, self.view.frame.size.width, 122.5)];
     [headerView setBackgroundColor:[UIColor clearColor]]; /*#8f3b8d*/
-    
-    //    UILabel *headerLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 40, 175, 61.25)];
-    //    headerLabel.minimumScaleFactor = 0.5;
-    //    headerLabel.adjustsFontSizeToFitWidth = YES;
-    //    headerLabel.font = dinFont;
-    //    headerLabel.textColor = [UIColor whiteColor];
-    //    headerLabel.numberOfLines = 2;
-    //    headerLabel.text = headerName;
-    //
-    //    [headerView addSubview:headerLabel];
-    //    NSString *imageUrl = @"alcohol.png";//[self getImageForHeader:headerName];
+
     NSURL *imgUrl = [[NSBundle mainBundle]URLForResource:self.shortName withExtension:@"png"];
     UIImage *detailImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:imgUrl]];
     UIImageView *headerImage = [[UIImageView alloc]initWithImage:detailImage];

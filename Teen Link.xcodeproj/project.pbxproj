@@ -60,13 +60,10 @@
 		93D3FEDC19E082890041AF9B /* DIN Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D3FEDB19E082640041AF9B /* DIN Condensed Bold.ttf */; };
 		93DB1F0419DFA6D50049494C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F0319DFA6D50049494C /* main.m */; };
 		93DB1F0719DFA6D50049494C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F0619DFA6D50049494C /* AppDelegate.m */; };
-		93DB1F0A19DFA6D50049494C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F0919DFA6D50049494C /* ViewController.m */; };
 		93DB1F0D19DFA6D50049494C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DB1F0B19DFA6D50049494C /* Main.storyboard */; };
 		93DB1F0F19DFA6D50049494C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DB1F0E19DFA6D50049494C /* Images.xcassets */; };
 		93DB1F1219DFA6D50049494C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DB1F1019DFA6D50049494C /* LaunchScreen.xib */; };
 		93DB1F1E19DFA6D50049494C /* Teen_LinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F1D19DFA6D50049494C /* Teen_LinkTests.m */; };
-		93DB1F2919DFA7D00049494C /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F2819DFA7D00049494C /* CHCSVParser.m */; };
-		93DB1F2B19DFA8FD0049494C /* KATHYK_TEEN_DATA_9_30_2014.csv in Resources */ = {isa = PBXBuildFile; fileRef = 93DB1F2A19DFA8FD0049494C /* KATHYK_TEEN_DATA_9_30_2014.csv */; };
 		93DB1F2E19DFAD280049494C /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F2D19DFAD280049494C /* Resource.m */; };
 		93DB1F3119E0659D0049494C /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F3019E0659D0049494C /* LandingPageViewController.m */; };
 		93DB1F3619E067710049494C /* GridPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F3519E067710049494C /* GridPageViewController.m */; };
@@ -147,17 +144,12 @@
 		93DB1F0319DFA6D50049494C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93DB1F0519DFA6D50049494C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93DB1F0619DFA6D50049494C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93DB1F0819DFA6D50049494C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93DB1F0919DFA6D50049494C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93DB1F0C19DFA6D50049494C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93DB1F0E19DFA6D50049494C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93DB1F1119DFA6D50049494C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		93DB1F1719DFA6D50049494C /* Teen LinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teen LinkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DB1F1C19DFA6D50049494C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93DB1F1D19DFA6D50049494C /* Teen_LinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teen_LinkTests.m; sourceTree = "<group>"; };
-		93DB1F2719DFA7D00049494C /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
-		93DB1F2819DFA7D00049494C /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
-		93DB1F2A19DFA8FD0049494C /* KATHYK_TEEN_DATA_9_30_2014.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KATHYK_TEEN_DATA_9_30_2014.csv; sourceTree = "<group>"; };
 		93DB1F2C19DFAD280049494C /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
 		93DB1F2D19DFAD280049494C /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
 		93DB1F2F19E0659D0049494C /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
@@ -304,14 +296,9 @@
 				93EAF86819E119F90052F54A /* MoreDetailsViewController.m */,
 				93DB1F3419E067710049494C /* GridPageViewController.h */,
 				93DB1F3519E067710049494C /* GridPageViewController.m */,
-				93DB1F0819DFA6D50049494C /* ViewController.h */,
-				93DB1F0919DFA6D50049494C /* ViewController.m */,
 				93DB1F0B19DFA6D50049494C /* Main.storyboard */,
 				931BDF9419E1D26F00035D56 /* MenuViewController.h */,
 				931BDF9519E1D26F00035D56 /* MenuViewController.m */,
-				93DB1F2A19DFA8FD0049494C /* KATHYK_TEEN_DATA_9_30_2014.csv */,
-				93DB1F2719DFA7D00049494C /* CHCSVParser.h */,
-				93DB1F2819DFA7D00049494C /* CHCSVParser.m */,
 				93DB1F2F19E0659D0049494C /* LandingPageViewController.h */,
 				93DB1F3019E0659D0049494C /* LandingPageViewController.m */,
 				93DB1F2C19DFAD280049494C /* Resource.h */,
@@ -461,7 +448,6 @@
 				93D3FEDC19E082890041AF9B /* DIN Condensed Bold.ttf in Resources */,
 				93324E7319E1C71E0059E50C /* leadership.png in Resources */,
 				93324E7E19E1C8B60059E50C /* c_icon_call_disabled.png in Resources */,
-				93DB1F2B19DFA8FD0049494C /* KATHYK_TEEN_DATA_9_30_2014.csv in Resources */,
 				9396EB0319E0B92600EF2513 /* c_icon_map.png in Resources */,
 				93DB1F0D19DFA6D50049494C /* Main.storyboard in Resources */,
 				93324E6B19E1C71E0059E50C /* culturally.png in Resources */,
@@ -514,9 +500,7 @@
 				93A2AF7719E12BF900E9316F /* Callbutton.m in Sources */,
 				93324E2419E197FF0059E50C /* MapButton.m in Sources */,
 				93DB1F3119E0659D0049494C /* LandingPageViewController.m in Sources */,
-				93DB1F2919DFA7D00049494C /* CHCSVParser.m in Sources */,
 				93A2AF7A19E1307A00E9316F /* WebButton.m in Sources */,
-				93DB1F0A19DFA6D50049494C /* ViewController.m in Sources */,
 				93DB1F0719DFA6D50049494C /* AppDelegate.m in Sources */,
 				93DB1F3619E067710049494C /* GridPageViewController.m in Sources */,
 				93C3072619E079A400E214C3 /* DetailPageViewController.m in Sources */,

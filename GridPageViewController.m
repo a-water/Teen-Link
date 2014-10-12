@@ -24,51 +24,7 @@
     
     [super viewDidLoad];
     [self setupNavBarItems];
-    
-    self.resourceArrayNames = [[NSMutableArray alloc]init];
-    self.resourceArrayText = [[NSMutableArray alloc]init];
-    self.opportunityArrayText = [[NSMutableArray alloc]init];
-    self.opportunityArrayNames = [[NSMutableArray alloc]init];
-    self.topicItemArray = [[NSMutableArray alloc]init];
-    self.opportunityItemArray = [[NSMutableArray alloc]init];
-    NSURL *jsonURL = [[NSBundle mainBundle] URLForResource: @"teen_link" withExtension:@"json"];
-    self.jsonArray = [self parseDetailJSON:jsonURL];
-    for(NSDictionary* dict in self.jsonArray){
-        
-        if([[dict objectForKey:@"type"] isEqualToString:@"topic"]){
-            
-            [self.resourceArrayNames addObject:[dict objectForKey:@"name"]];
-            [self.resourceArrayText addObject:[dict objectForKey:@"text"]];
-            
-            NSMutableArray *contactsArray = [[NSMutableArray alloc]init];
-            for(NSDictionary *contactsDict in [dict valueForKeyPath:@"contacts"]){
-                Resource *resource = [[Resource alloc] createResource:[contactsDict valueForKeyPath:@"name"] andAddress:[contactsDict valueForKeyPath:@"address"] andWebsite:[contactsDict valueForKeyPath:@"link"] andHours:[contactsDict valueForKeyPath:@"hours"] andPhoneNumber:[contactsDict valueForKeyPath:@"number"]];
-                [contactsArray addObject:resource];
-            }
-            
-            Item *item = [[Item alloc]createItem:[dict objectForKey:@"type"] andName:[dict objectForKey:@"name"]  andText:[dict objectForKey:@"text"] andShortName:[dict objectForKey:@"short_name"] andContacts:[NSMutableArray arrayWithArray:contactsArray]];
-            [self.topicItemArray addObject:item];
-            [contactsArray removeAllObjects];
-            
-        }
-        else if ([[dict objectForKey:@"type"] isEqualToString:@"opportunity"]){
-            
-            [self.opportunityArrayNames addObject:[dict objectForKey:@"name"]];
-            [self.opportunityArrayText addObject:[dict objectForKey:@"text"]];
-            
-            NSMutableArray *contactsArray = [[NSMutableArray alloc]init];
-            for(NSDictionary *contactsDict in [dict valueForKeyPath:@"contacts"]){
-                Resource *resource = [[Resource alloc] createResource:[contactsDict valueForKeyPath:@"name"] andAddress:[contactsDict valueForKeyPath:@"address"] andWebsite:[contactsDict valueForKeyPath:@"link"] andHours:[contactsDict valueForKeyPath:@"hours"] andPhoneNumber:[contactsDict valueForKeyPath:@"number"]];
-                [contactsArray addObject:resource];
-            }
-            
-            Item *item = [[Item alloc]createItem:[dict objectForKey:@"type"] andName:[dict objectForKey:@"name"]  andText:[dict objectForKey:@"text"]  andShortName:[dict objectForKey:@"short_name"] andContacts:[NSMutableArray arrayWithArray:contactsArray]];
-            [self.opportunityItemArray addObject:item];
-            [contactsArray removeAllObjects];
-
-        }
-    }
-    
+      
     resourcesShowing = YES;
     
     [self setupTwoMainViews];
@@ -119,8 +75,8 @@
 
 -(void)setupSwitcherButtons{
     
-    self.resourceOnButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 65, self.view.frame.size.width/2, 50)];
-    self.opportunityOnButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2, 65, self.view.frame.size.width/2, 50)];
+    self.resourceOnButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width/2, 50)];
+    self.opportunityOnButton = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2, 64, self.view.frame.size.width/2, 50)];
     
     [self.resourceOnButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
     [self.opportunityOnButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
@@ -149,7 +105,8 @@
     self.resourceList = [[UITableView alloc]initWithFrame:CGRectMake(0, 15, self.view.frame.size.width, self.resourceView.frame.size.height-15) style:UITableViewStylePlain];
     self.opportunitesList = [[UITableView alloc]initWithFrame:CGRectMake(0, 15, self.view.frame.size.width, self.opportunityView.frame.size.height -15) style:UITableViewStylePlain];
     
-    
+    self.resourceList.separatorColor = [UIColor clearColor];
+    self.opportunitesList.separatorColor = [UIColor clearColor];
     self.resourceList.delegate = self;
     self.opportunitesList.delegate = self;
     self.resourceList.dataSource = self;
@@ -197,12 +154,12 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if(tableView.tag == 100){
         //Resource table
-        return [self.resourceArrayNames count];
+        return [self.topicItemArray count];
         
     }
     else if(tableView.tag == 200){
         //Opp table
-        return [self.opportunityArrayNames count];
+        return [self.opportunityItemArray count];
     }
     return 0;
 }
@@ -218,9 +175,11 @@
         //Resource table
         static NSString *CellIdentifier = @"resCell";
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.textLabel.text = [[self.resourceArrayNames objectAtIndex:indexPath.row]uppercaseString];
-        cell.textLabel.font = dinFont;
-        cell.textLabel.textColor = cellFontColor;
+        UILabel *cellTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(15, 10, cell.frame.size.width, 30)];
+        cellTextLabel.font = dinFont;
+        cellTextLabel.textColor = cellFontColor;
+        cellTextLabel.text = [[[self.topicItemArray objectAtIndex:indexPath.row]name]uppercaseString];
+        [cell addSubview:cellTextLabel];
         if(indexPath.row % 2 != 0){
             cell.backgroundColor = everyOtherCellColor;
         }
@@ -230,9 +189,11 @@
         //Opp table
         static NSString *CellIdentifier = @"oppCell";
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.textLabel.text = [[self.opportunityArrayNames objectAtIndex:indexPath.row]uppercaseString];
-        cell.textLabel.font = dinFont;
-        cell.textLabel.textColor = cellFontColor;
+        UILabel *cellTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(15, 10, cell.frame.size.width, 30)];
+        cellTextLabel.font = dinFont;
+        cellTextLabel.textColor = cellFontColor;
+        cellTextLabel.text = [[[self.opportunityItemArray objectAtIndex:indexPath.row]name]uppercaseString];
+        [cell addSubview:cellTextLabel];
         if(indexPath.row % 2 != 0){
             cell.backgroundColor = everyOtherCellColor;
         }
@@ -255,25 +216,21 @@
     
     if(self.tableTag == 100){
         DPVC.topicItemArray = [NSMutableArray arrayWithArray:self.topicItemArray];
-        DPVC.headerText = [self.resourceArrayNames objectAtIndex:self.indexRow];
-        DPVC.detailTextString = [self.resourceArrayText objectAtIndex:self.indexRow];
+        DPVC.headerText = [[self.topicItemArray objectAtIndex:self.indexRow]name];
+        DPVC.detailTextString = [[self.topicItemArray objectAtIndex:self.indexRow]paragraphText];
         DPVC.isTopic = YES;
     }
     else if(self.tableTag == 200){
         DPVC.opportunityItemArray = [NSMutableArray arrayWithArray:self.opportunityItemArray];
-        DPVC.headerText = [self.opportunityArrayNames objectAtIndex:self.indexRow];
-        DPVC.detailTextString = [self.opportunityArrayText objectAtIndex:self.indexRow];
+        DPVC.headerText = [[self.opportunityItemArray objectAtIndex:self.indexRow]name];
+        DPVC.detailTextString = [[self.opportunityItemArray objectAtIndex:self.indexRow]paragraphText];
         DPVC.isTopic = NO;
     }
 
 }
 
-
-
-
 -(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
-
 
 @end

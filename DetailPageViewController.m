@@ -17,15 +17,6 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.title = @"TEEN LINK";
     
-    
-    //    self.detailText = [[UITextView alloc]initWithFrame:CGRectMake(0, 0, 300, 300)];
-    //    [self.view addSubview:self.detailText];
-    
-    //SETUP FONTS
-    helveticaNeueRegular = [UIFont fontWithName:@"Helvetica" size:30];
-    helveticaNeueLight = [UIFont fontWithName:@"Helvetica-Light" size:30];
-    helveticaNeueBold = [UIFont fontWithName:@"Helvetica-Bold" size:30];
-    
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
     int numContacts = 0;
@@ -53,9 +44,10 @@
     }
     
     shortName = matchItem.shortName;
-    textToSend = matchItem.text;
-    
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 489 + (124 * numContacts));
+    textToSend = matchItem.paragraphText;
+    NSLog(@"%@", NSStringFromCGSize(self.view.frame.size));
+//    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 489 + (124 * numContacts));
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, (self.view.frame.size.height + (130 * numContacts)) - 142);
     self.scrollView.backgroundColor = [UIColor colorWithRed:0.847 green:0.847 blue:0.847 alpha:1] /*#d8d8d8*/;
     [self.view addSubview:self.scrollView];
     [self setupHeader:matchItem.shortName];
@@ -162,7 +154,8 @@
                 [[callBtn imageView]setContentMode:UIViewContentModeScaleAspectFit];
                 [callBtn setImage:callImage forState:UIControlStateNormal];
                 callBtn.phoneNumber = resource.phoneNumber;
-                if([resource.phoneNumber isEqualToString:@""]){
+                if([resource.phoneNumber isEqualToString:@"" ]|| resource.phoneNumber
+                     == nil){
                     [callBtn setImage:callImageDisabled forState:UIControlStateNormal];
                     callBtn.userInteractionEnabled = NO;
                 }
@@ -201,12 +194,14 @@
                 name.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1] /*#0b0849*/;
                 name.text = resource.resourceName;
                 
-                UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(15, 30, 300, 35)];
+                UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(15, 30, 275, 35)];
                 address.font = helTwentyfour;
+                address.minimumScaleFactor = 0.8;
+                address.adjustsFontSizeToFitWidth = YES;
                 address.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1] /*666666*/;
                 address.text = resource.locationAddress;
                 
-                UILabel *hours = [[UILabel alloc]initWithFrame:CGRectMake(15, 45, 300, 35)];
+                UILabel *hours = [[UILabel alloc]initWithFrame:CGRectMake(15, 45, 275, 35)];
                 hours.font = helTwentyfour;
                 hours.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1] /*666666*/;
                 hours.text = resource.hours;

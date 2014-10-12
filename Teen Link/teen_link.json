@@ -71,7 +71,7 @@
 			},
 			{
 				"name": "Emergency Contraception Line (Recorded line)",
-				"number": "1(888) 66825283",
+				"number": "1(888) 668-2528",
 				"link": "www.not-2-late.com"
 			},
 			{
@@ -95,7 +95,7 @@
 			},
 			{
 				"name": "End Harm - Child Protective Services",
-				"number": "1(866) 3634276",
+				"number": "1(866) 363-4276",
 				"hours": "24 hrs"
 			},
 			{
@@ -496,7 +496,7 @@
 	},
 	{
 		"type": "opportunity",
-		"name": "Leadership & Volunteer Opportunities",
+		"name": "Leadership & Volunteer",
         "short_name": "leadership",
 		"text": "Volunteering helps to create a stable and cohesive society, increases social harmony among diverse individuals who volunteer together and promotes an individual volunteer’s good health and emotional well-being. \n~ Independent Sector",
 		"contacts": [
@@ -543,7 +543,6 @@
 			},
 			{
 				"name": "Team Child",
-				"number": "211",
 				"link": "www.teamchild.org",
 				"hours": "",
 				"address": ""

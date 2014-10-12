@@ -23,10 +23,6 @@
 @property(strong, nonatomic) UITableView *resourceList;
 @property(strong, nonatomic) UITableView *opportunitesList;
 @property(strong, nonatomic) NSArray *jsonArray;
-@property(strong, nonatomic) NSMutableArray *resourceArrayNames;
-@property(strong, nonatomic) NSMutableArray *resourceArrayText;
-@property(strong, nonatomic) NSMutableArray *opportunityArrayNames;
-@property(strong, nonatomic) NSMutableArray *opportunityArrayText;
 @property(strong, nonatomic) NSMutableArray *topicItemArray;
 @property(strong, nonatomic) NSMutableArray *opportunityItemArray;
 @property(nonatomic) NSInteger indexRow;

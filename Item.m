@@ -10,11 +10,11 @@
 
 @implementation Item
 
--(id)createItem:(NSString*)type andName:(NSString*)name andText:(NSString*)text andShortName:(NSString*)shortName andContacts:(NSMutableArray*)contactsArray{
+-(id)createItem:(NSString*)type andName:(NSString*)name andText:(NSString*)paragraphText andShortName:(NSString*)shortName andContacts:(NSMutableArray*)contactsArray{
     
     self.type = type;
     self.name = name;
-    self.text = text;
+    self.paragraphText = paragraphText;
     self.shortName = shortName;
     self.contactsArray = contactsArray;
     

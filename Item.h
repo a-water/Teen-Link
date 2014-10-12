@@ -12,7 +12,7 @@
 
 @property(strong, nonatomic) NSString *type;
 @property(strong, nonatomic) NSString *name;
-@property(strong, nonatomic) NSString *text;
+@property(strong, nonatomic) NSString *paragraphText;
 @property(strong, nonatomic) NSString *shortName;
 @property(strong, nonatomic) NSMutableArray *contactsArray;
 

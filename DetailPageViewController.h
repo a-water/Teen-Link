@@ -15,9 +15,6 @@
 #import "MoreDetailsViewController.h"
 
 @interface DetailPageViewController : UIViewController{
-    UIFont      *helveticaNeueRegular;
-    UIFont      *helveticaNeueLight;
-    UIFont      *helveticaNeueBold;
     NSString    *shortName;
     NSString    *textToSend;
 }
@@ -30,8 +27,8 @@
 @property (strong, nonatomic) NSString          *phoneNumber;
 @property (strong, nonatomic) NSString          *webUrl;
 @property (strong, nonatomic) NSString          *mapAddress;
-@property(strong, nonatomic) NSMutableArray     *topicItemArray;
-@property(strong, nonatomic) NSMutableArray     *opportunityItemArray;
-@property(nonatomic) BOOL                        isTopic;
+@property (strong, nonatomic) NSMutableArray    *topicItemArray;
+@property (strong, nonatomic) NSMutableArray    *opportunityItemArray;
+@property (nonatomic) BOOL                       isTopic;
 
 @end
