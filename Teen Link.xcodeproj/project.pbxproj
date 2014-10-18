@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93054F7719F22B340019C103 /* SDiPhoneVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 93054F7619F22B340019C103 /* SDiPhoneVersion.m */; };
 		931BDF9619E1D26F00035D56 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931BDF9519E1D26F00035D56 /* MenuViewController.m */; };
 		931BDF9B19E1DE3500035D56 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931BDF9A19E1DE3500035D56 /* Images-2.xcassets */; };
 		931BDF9F19E1E26C00035D56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 931BDF9E19E1E26C00035D56 /* Default-568h@2x.png */; };
@@ -82,6 +83,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93054F7519F22B340019C103 /* SDiPhoneVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiPhoneVersion.h; sourceTree = "<group>"; };
+		93054F7619F22B340019C103 /* SDiPhoneVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiPhoneVersion.m; sourceTree = "<group>"; };
 		931BDF9419E1D26F00035D56 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		931BDF9519E1D26F00035D56 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		931BDF9A19E1DE3500035D56 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				93DB1F2D19DFAD280049494C /* Resource.m */,
 				939831BF19E0FDF8006BFEC6 /* Item.h */,
 				939831C019E0FDF8006BFEC6 /* Item.m */,
+				93054F7519F22B340019C103 /* SDiPhoneVersion.h */,
+				93054F7619F22B340019C103 /* SDiPhoneVersion.m */,
 				93DB1F1019DFA6D50049494C /* LaunchScreen.xib */,
 				93D3FEDA19E082530041AF9B /* Resources */,
 				931BDF9A19E1DE3500035D56 /* Images-2.xcassets */,
@@ -502,6 +507,7 @@
 				93DB1F3119E0659D0049494C /* LandingPageViewController.m in Sources */,
 				93A2AF7A19E1307A00E9316F /* WebButton.m in Sources */,
 				93DB1F0719DFA6D50049494C /* AppDelegate.m in Sources */,
+				93054F7719F22B340019C103 /* SDiPhoneVersion.m in Sources */,
 				93DB1F3619E067710049494C /* GridPageViewController.m in Sources */,
 				93C3072619E079A400E214C3 /* DetailPageViewController.m in Sources */,
 				93DB1F2E19DFAD280049494C /* Resource.m in Sources */,

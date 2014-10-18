@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GridPageViewController.h"
+#import "SDiPhoneVersion.h"
 
 @interface LandingPageViewController : UIViewController
 {

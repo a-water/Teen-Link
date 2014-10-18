@@ -14,6 +14,7 @@
 
 @implementation MenuViewController
 
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -23,9 +24,30 @@
     
     subItems = [[NSArray alloc]initWithObjects:@"Alcohol, Drugs & Addiction", @"At-Risk Youth", @"Birth Control/Pregnancy", @"Child Abuse", @"Counseling", @"Culturally Specific Agencies", @"Dating & Domestic Violence", @"Eating Disorders", @"Education", @"Employment & Job Training", nil];
     
-    [self setupNavBarItems];
+//    [self setupNavBarItems];
+    [self setupTabBar];
     [self setupTableView];
   
+}
+
+-(void)setupTabBar{
+    
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.frame = CGRectMake(0, 0, self.view.frame.size.width, 64);
+    toolbar.tintColor = [UIColor whiteColor];
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    flex.width = 10.0f;
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(closeMenu)];
+    [closeButton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIColor colorWithRed:236/255.0f green:0/255.0f blue:140/255.0f alpha:1.0f],  NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+    [items addObject:flex];
+    [items addObject:closeButton];
+    [toolbar setItems:items];
+    [self.view addSubview:toolbar];
+}
+
+-(void)closeMenu{
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 -(void)setupTableView{

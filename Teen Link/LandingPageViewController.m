@@ -12,8 +12,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    
-    
+        
     [self setupNavBarItems];
     [self setupBackGround];
     [self setupHeader];

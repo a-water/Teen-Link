@@ -27,7 +27,7 @@
             if([[[self.topicItemArray objectAtIndex:i]name] isEqualToString:self.headerText]){
                 
                 matchItem = [self.topicItemArray objectAtIndex:i];
-                numContacts = [matchItem.contactsArray count];
+                numContacts = (int)[matchItem.contactsArray count];
             }
         }
     }
@@ -37,7 +37,7 @@
             if([[[self.opportunityItemArray objectAtIndex:i]name] isEqualToString:self.headerText]){
                 
                 matchItem = [self.opportunityItemArray objectAtIndex:i];
-                numContacts = [matchItem.contactsArray count];
+                numContacts = (int)[matchItem.contactsArray count];
             }
             
         }
@@ -45,8 +45,6 @@
     
     shortName = matchItem.shortName;
     textToSend = matchItem.paragraphText;
-    NSLog(@"%@", NSStringFromCGSize(self.view.frame.size));
-//    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 489 + (124 * numContacts));
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, (self.view.frame.size.height + (130 * numContacts)) - 142);
     self.scrollView.backgroundColor = [UIColor colorWithRed:0.847 green:0.847 blue:0.847 alpha:1] /*#d8d8d8*/;
     [self.view addSubview:self.scrollView];
@@ -248,7 +246,9 @@
 
 -(void)openWeb:(id)sender{
     NSString *siteUrl = [@"http://" stringByAppendingString:[NSString stringWithString:[sender urlAddress]]];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:siteUrl]];
+    UIWebView *webView = [[UIWebView alloc]init];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:siteUrl]]];
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:siteUrl]];
 }
 
 -(void)openMaps:(id)sender{
