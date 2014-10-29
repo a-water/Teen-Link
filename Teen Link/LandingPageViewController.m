@@ -246,7 +246,7 @@
         viewAllWidth = 120;
         viewAllHeight = 34;
         viewMoreFontSize = 17;
-        blockYVal = 480;
+        blockYVal = 490;
         textSpacer = -8;
     }
 
