@@ -98,7 +98,7 @@
         cell.textLabel.textColor = [UIColor colorWithRed:0.431 green:0.431 blue:0.431 alpha:1] /*E6E6E6*/;
         if(indexPath.row != [menuMainItems count] -1){
             
-            UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, 320, 2)];
+            UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, 2)];
             line.backgroundColor = [UIColor colorWithRed:239/255.0f green:239/255.0f blue:239/255.0f alpha:1.0f];
             [cell addSubview:line];
         }

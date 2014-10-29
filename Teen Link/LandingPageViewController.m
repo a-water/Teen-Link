@@ -72,7 +72,12 @@
         callBtnHeight = 42;
     }
     else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
-        
+        textAndCallXval = 30;
+        whaleXVal = 220;
+        whaleSize = 165;
+        fontSize = 35;
+        callBtnWidth = 150;
+        callBtnHeight = 42;
     }
     
     UILabel *headerText = [[UILabel alloc]initWithFrame:CGRectMake(textAndCallXval, 10, 200, 100)];
@@ -110,6 +115,7 @@
     int suicideXval = 0;
     int fontSize = 0;
     int viewAllXVal = 0;
+    int viewAllYVal = 0;
     double viewAllHeight = 0;
     double viewAllWidth = 0;
     int viewMoreFontSize = 0;
@@ -123,6 +129,7 @@
         suicideXval = 160;
         fontSize = 28;
         viewAllXVal = 210;
+        viewAllYVal = 144;
         viewAllWidth = 92.5;
         viewAllHeight = 22.5;
         viewMoreFontSize = 12;
@@ -136,6 +143,7 @@
         suicideXval = 190;
         fontSize = 35;
         viewAllXVal = 240;
+        viewAllYVal = 144;
         viewAllWidth = 106;
         viewAllHeight = 30;
         viewMoreFontSize = 15;
@@ -143,7 +151,18 @@
         textSpacer = -8;
     }
     else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
-        
+        textAndAlcoholXVal = 30;
+        btnWidthSize = 175;
+        btwnHeightSize = 114;
+        suicideXval = 215;
+        fontSize = 38;
+        viewAllXVal = 267;
+        viewAllYVal = 154;
+        viewAllWidth = 120;
+        viewAllHeight = 34;
+        viewMoreFontSize = 17;
+        blockYVal = 260;
+        textSpacer = -8;
     }
     
     UIView *servicesView = [[UIView alloc]initWithFrame:CGRectMake(0, blockYVal, self.view.frame.size.width, 180)];
@@ -160,7 +179,7 @@
     [rightUpperButton setBackgroundImage:[UIImage imageNamed:@"a_block2.png"]forState:UIControlStateNormal];
     [rightUpperButton addTarget:self action:@selector(boxTwoClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(viewAllXVal, 144, viewAllWidth, viewAllHeight)];
+    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(viewAllXVal, viewAllYVal, viewAllWidth, viewAllHeight)];
     [viewMoreButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
     viewMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:viewMoreFontSize];
     [viewMoreButton setTitle:@"VIEW ALL" forState:UIControlStateNormal];
@@ -181,6 +200,7 @@
     int youthXval = 0;
     int fontSize = 0;
     int viewAllXVal = 0;
+    int viewAllYVal = 0;
     double viewAllHeight = 0;
     double viewAllWidth = 0;
     int viewMoreFontSize = 0;
@@ -194,6 +214,7 @@
         youthXval = 160;
         fontSize = 28;
         viewAllXVal = 210;
+        viewAllYVal = 144;
         viewAllWidth = 92.5;
         viewAllHeight = 22.5;
         viewMoreFontSize = 12;
@@ -207,6 +228,7 @@
         youthXval = 190;
         fontSize = 35;
         viewAllXVal = 240;
+        viewAllYVal = 144;
         viewAllWidth = 106;
         viewAllHeight = 30;
         viewMoreFontSize = 15;
@@ -214,7 +236,18 @@
         textSpacer = -8;
     }
     else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
-        
+        textAndVolunteeringXVal = 30;
+        btnWidthSize = 175;
+        btwnHeightSize = 114;
+        youthXval = 215;
+        fontSize = 38;
+        viewAllXVal = 267;
+        viewAllYVal = 154;
+        viewAllWidth = 120;
+        viewAllHeight = 34;
+        viewMoreFontSize = 17;
+        blockYVal = 480;
+        textSpacer = -8;
     }
 
     UIView *opportuniesView = [[UIView alloc]initWithFrame:CGRectMake(0, blockYVal, self.view.frame.size.width, 180)];
@@ -231,7 +264,7 @@
     [rightlowerButton setBackgroundImage:[UIImage imageNamed:@"a_block4.png"] forState:UIControlStateNormal];
     [rightlowerButton addTarget:self action:@selector(boxFourClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(viewAllXVal, 144, viewAllWidth, viewAllHeight)];
+    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(viewAllXVal, viewAllYVal, viewAllWidth, viewAllHeight)];
     [viewMoreButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
     viewMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:viewMoreFontSize];
     [viewMoreButton setTitle:@"VIEW ALL" forState:UIControlStateNormal];

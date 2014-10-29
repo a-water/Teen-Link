@@ -74,7 +74,7 @@
 -(void)setupTextArea:(NSString*) text{
     UIView *textArea = [[UIView alloc]initWithFrame:CGRectMake(0, 184, self.view.frame.size.width, 200)];
     
-    self.detailTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, -30, self.view.frame.size.width-50, 187)];
+    self.detailTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, -30, self.view.frame.size.width-30, 187)];
     self.detailTextLabel.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1]; /*#0b0849*/
     self.detailTextLabel.numberOfLines = 5;
     self.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];

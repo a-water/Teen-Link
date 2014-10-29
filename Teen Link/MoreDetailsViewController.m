@@ -39,7 +39,7 @@
                                             options:NSStringDrawingUsesLineFragmentOrigin
                                          attributes:attributesDictionary
                                             context:nil];
-    detailTextLabel.frame = CGRectMake(15, 208, frame.size.width, frame.size.height);
+    detailTextLabel.frame = CGRectMake(15, 208, self.view.frame.size.width - 30, frame.size.height);
     detailTextLabel.backgroundColor = [UIColor whiteColor];
 //    detailTextLabel.layer.borderWidth = 1.0f;
 //    detailTextLabel.layer.borderColor = [[UIColor redColor]CGColor];
