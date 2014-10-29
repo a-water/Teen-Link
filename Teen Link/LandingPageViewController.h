@@ -14,6 +14,7 @@
 {
     BOOL sendToOpportunity;
     int boxClickedIndexToUse;
+    UIScrollView *scrollView;
 }
 
 @property(strong, nonatomic) NSArray            *jsonArray;

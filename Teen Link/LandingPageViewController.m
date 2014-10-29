@@ -12,18 +12,16 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-        
+    
+    scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 568);
+    [self.view addSubview:scrollView];
+    
     [self setupNavBarItems];
     [self setupBackGround];
     [self setupHeader];
     [self setupServicesBlock];
     [self setupOpportuniesBlock];
-    
-    UIImage *whaleImg = [UIImage imageNamed:@"a_whale.png"];
-    UIImageView *whaleView = [[UIImageView alloc]initWithImage:whaleImg];
-    whaleView.frame = CGRectMake(178, 75, 135, 135);
-    whaleView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:whaleView];
     
     dispatch_queue_t queue = dispatch_queue_create("org.teenlink.teenlink", NULL);
     dispatch_async(queue, ^{
@@ -31,8 +29,14 @@
         [self determineFrontPicsIndex];
     });
     
+/*
+    iPhone35inch = 1, [4, 4s]
+    iPhone4inch =  2, [5, 5C, 5S]
+    iPhone47inch = 3, [6]
+    iPhone55inch = 4  [6+]
+ */
 }
-//
+
 -(void)setupBackGround{
     UIImageView *bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"a_grey_bg"]];
     bgImageView.frame = self.view.bounds;
@@ -41,24 +45,56 @@
 }
 
 -(void)setupHeader{
-    UIView *headerBlock = [[UIView alloc]initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, 145)];
+    UIView *headerBlock = [[UIView alloc]initWithFrame:CGRectMake(0, 44, scrollView.frame.size.width, 145)];
     [headerBlock setBackgroundColor:[UIColor colorWithRed:0.694 green:0.847 blue:0 alpha:1] /*#b1d800*/];
     
+    //here begins my punishment for not wanting to learn autolayout :(
+    int textAndCallXval = 0;
+    int whaleXVal = 0;
+    int whaleSize = 0;
+    int fontSize = 0;
+    int callBtnWidth = 0;
+    int callBtnHeight = 0;
+    if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){
+        textAndCallXval = 15;
+        whaleXVal = 178;
+        whaleSize = 135;
+        fontSize = 30;
+        callBtnWidth = 136;
+        callBtnHeight = 38;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        textAndCallXval = 30;
+        whaleXVal = 208;
+        whaleSize = 155;
+        fontSize = 35;
+        callBtnWidth = 150;
+        callBtnHeight = 42;
+    }
+    else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
+        
+    }
     
-    UILabel *headerText = [[UILabel alloc]initWithFrame:CGRectMake(15, 10, 200, 100)];
-    headerText.font = [UIFont fontWithName:@"DINCondensed-Bold" size:30];
+    UILabel *headerText = [[UILabel alloc]initWithFrame:CGRectMake(textAndCallXval, 10, 200, 100)];
+    headerText.font = [UIFont fontWithName:@"DINCondensed-Bold" size:fontSize];
     headerText.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1] /*#0b0849*/;
     headerText.text = @"TALK IT OUT";
     
     UIImage *callImage = [UIImage imageNamed:@"a_call_btn.png"];
-    UIButton *callButton = [[UIButton alloc]initWithFrame:CGRectMake(15, 80, 136, 37.5)];
+    UIButton *callButton = [[UIButton alloc]initWithFrame:CGRectMake(textAndCallXval, 80, callBtnWidth, callBtnHeight)];
     [callButton setBackgroundImage:callImage forState:UIControlStateNormal];
     [callButton addTarget:self action:@selector(callTeenLink) forControlEvents:UIControlEventTouchUpInside];
     
+    UIImage *whaleImg = [UIImage imageNamed:@"a_whale.png"];
+    UIImageView *whaleView = [[UIImageView alloc]initWithImage:whaleImg];
+    whaleView.frame = CGRectMake(whaleXVal, 75, whaleSize, whaleSize);
+    whaleView.contentMode = UIViewContentModeScaleAspectFit;
+    
     [headerBlock addSubview:headerText];
     [headerBlock addSubview:callButton];
-    
-    [self.view addSubview:headerBlock];
+    [scrollView addSubview:headerBlock];
+    [scrollView addSubview:whaleView];
+
 }
 
 -(void)callTeenLink{
@@ -67,23 +103,66 @@
 }
 
 -(void)setupServicesBlock{
-    UIView *servicesView = [[UIView alloc]initWithFrame:CGRectMake(0, 210, self.view.frame.size.width, 160)];
     
-    UILabel *servicesText = [[UILabel alloc]initWithFrame:CGRectMake(15, 0, 200, 28)];
-    servicesText.font = [UIFont fontWithName:@"DINCondensed-Bold" size:28];
+    int textAndAlcoholXVal = 0;
+    int btnWidthSize = 0;
+    int btwnHeightSize = 0;
+    int suicideXval = 0;
+    int fontSize = 0;
+    int viewAllXVal = 0;
+    double viewAllHeight = 0;
+    double viewAllWidth = 0;
+    int viewMoreFontSize = 0;
+    int blockYVal = 0;
+    int textSpacer = 0;
+    
+    if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){
+        textAndAlcoholXVal = 15;
+        btnWidthSize = 150;
+        btwnHeightSize = 98;
+        suicideXval = 160;
+        fontSize = 28;
+        viewAllXVal = 210;
+        viewAllWidth = 92.5;
+        viewAllHeight = 22.5;
+        viewMoreFontSize = 12;
+        blockYVal = 210;
+        textSpacer = 0;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        textAndAlcoholXVal = 30;
+        btnWidthSize = 160;
+        btwnHeightSize = 105;
+        suicideXval = 190;
+        fontSize = 35;
+        viewAllXVal = 240;
+        viewAllWidth = 106;
+        viewAllHeight = 30;
+        viewMoreFontSize = 15;
+        blockYVal = 240;
+        textSpacer = -8;
+    }
+    else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
+        
+    }
+    
+    UIView *servicesView = [[UIView alloc]initWithFrame:CGRectMake(0, blockYVal, self.view.frame.size.width, 180)];
+    
+    UILabel *servicesText = [[UILabel alloc]initWithFrame:CGRectMake(textAndAlcoholXVal, textSpacer, 200, 40)];
+    servicesText.font = [UIFont fontWithName:@"DINCondensed-Bold" size:fontSize];
     servicesText.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1] /*#0b0849*/;
     servicesText.text = @"SERVICES";
     
-    UIButton *leftUpperButton = [[UIButton alloc]initWithFrame:CGRectMake(10, 30, 150, 98)];
+    UIButton *leftUpperButton = [[UIButton alloc]initWithFrame:CGRectMake(textAndAlcoholXVal - 5, 30, btnWidthSize, btwnHeightSize)];
     [leftUpperButton setBackgroundImage:[UIImage imageNamed:@"a_block1.png"] forState:UIControlStateNormal];
     [leftUpperButton addTarget:self action:@selector(boxOneClicked) forControlEvents:UIControlEventTouchUpInside];
-    UIButton *rightUpperButton = [[UIButton alloc]initWithFrame:CGRectMake(160, 30, 150, 98)];
+    UIButton *rightUpperButton = [[UIButton alloc]initWithFrame:CGRectMake(suicideXval, 30, btnWidthSize, btwnHeightSize)];
     [rightUpperButton setBackgroundImage:[UIImage imageNamed:@"a_block2.png"]forState:UIControlStateNormal];
     [rightUpperButton addTarget:self action:@selector(boxTwoClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 144, 92.5, 22.5)];
+    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(viewAllXVal, 144, viewAllWidth, viewAllHeight)];
     [viewMoreButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
-    viewMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12];
+    viewMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:viewMoreFontSize];
     [viewMoreButton setTitle:@"VIEW ALL" forState:UIControlStateNormal];
     [viewMoreButton addTarget:self action:@selector(viewServicesSelected) forControlEvents:UIControlEventTouchUpInside];
     
@@ -91,28 +170,70 @@
     [servicesView addSubview:leftUpperButton];
     [servicesView addSubview:rightUpperButton];
     [servicesView addSubview:servicesText];
-    
-    [self.view addSubview:servicesView];
+    [scrollView addSubview:servicesView];
 }
 
 -(void)setupOpportuniesBlock{
-    UIView *opportuniesView = [[UIView alloc]initWithFrame:CGRectMake(0, 380, self.view.frame.size.width, 160)];
     
-    UILabel *opportunityText = [[UILabel alloc]initWithFrame:CGRectMake(15, 0, 200, 28)];
-    opportunityText.font = [UIFont fontWithName:@"DINCondensed-Bold" size:28];
+    int textAndVolunteeringXVal = 0;
+    int btnWidthSize = 0;
+    int btwnHeightSize = 0;
+    int youthXval = 0;
+    int fontSize = 0;
+    int viewAllXVal = 0;
+    double viewAllHeight = 0;
+    double viewAllWidth = 0;
+    int viewMoreFontSize = 0;
+    int blockYVal = 0;
+    int textSpacer = 0;
+    
+    if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){
+        textAndVolunteeringXVal = 15;
+        btnWidthSize = 150;
+        btwnHeightSize = 98;
+        youthXval = 160;
+        fontSize = 28;
+        viewAllXVal = 210;
+        viewAllWidth = 92.5;
+        viewAllHeight = 22.5;
+        viewMoreFontSize = 12;
+        blockYVal = 380;
+        textSpacer = 0;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        textAndVolunteeringXVal = 30;
+        btnWidthSize = 160;
+        btwnHeightSize = 105;
+        youthXval = 190;
+        fontSize = 35;
+        viewAllXVal = 240;
+        viewAllWidth = 106;
+        viewAllHeight = 30;
+        viewMoreFontSize = 15;
+        blockYVal = 440;
+        textSpacer = -8;
+    }
+    else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
+        
+    }
+
+    UIView *opportuniesView = [[UIView alloc]initWithFrame:CGRectMake(0, blockYVal, self.view.frame.size.width, 180)];
+    
+    UILabel *opportunityText = [[UILabel alloc]initWithFrame:CGRectMake(textAndVolunteeringXVal, textSpacer, 200, 40)];
+    opportunityText.font = [UIFont fontWithName:@"DINCondensed-Bold" size:fontSize];
     opportunityText.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1] /*#0b0849*/;
     opportunityText.text = @"OPPORTUNITIES";
     
-    UIButton *leftLowerButton = [[UIButton alloc]initWithFrame:CGRectMake(10, 30, 150, 98)];
+    UIButton *leftLowerButton = [[UIButton alloc]initWithFrame:CGRectMake(textAndVolunteeringXVal - 5, 30, btnWidthSize, btwnHeightSize)];
     [leftLowerButton setBackgroundImage:[UIImage imageNamed:@"a_block3"] forState:UIControlStateNormal];
     [leftLowerButton addTarget:self action:@selector(boxThreeClicked) forControlEvents:UIControlEventTouchUpInside];
-    UIButton *rightlowerButton = [[UIButton alloc]initWithFrame:CGRectMake(160, 30, 150, 98)];
+    UIButton *rightlowerButton = [[UIButton alloc]initWithFrame:CGRectMake(youthXval, 30, btnWidthSize, btwnHeightSize)];
     [rightlowerButton setBackgroundImage:[UIImage imageNamed:@"a_block4.png"] forState:UIControlStateNormal];
     [rightlowerButton addTarget:self action:@selector(boxFourClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 144, 92.5, 22.5)];
+    UIButton *viewMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(viewAllXVal, 144, viewAllWidth, viewAllHeight)];
     [viewMoreButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
-    viewMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12];
+    viewMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:viewMoreFontSize];
     [viewMoreButton setTitle:@"VIEW ALL" forState:UIControlStateNormal];
     [viewMoreButton addTarget:self action:@selector(viewOpportunitiesSelected) forControlEvents:UIControlEventTouchUpInside];
     
@@ -120,8 +241,7 @@
     [opportuniesView addSubview:leftLowerButton];
     [opportuniesView addSubview:rightlowerButton];
     [opportuniesView addSubview:opportunityText];
-    
-    [self.view addSubview:opportuniesView];
+    [scrollView addSubview:opportuniesView];
 }
 
 -(void)boxOneClicked{
