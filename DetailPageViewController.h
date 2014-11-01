@@ -13,6 +13,7 @@
 #import "WebButton.h"
 #import "MapButton.h"
 #import "MoreDetailsViewController.h"
+#import "SDiPhoneVersion.h"
 
 @interface DetailPageViewController : UIViewController{
     NSString    *shortName;

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SDiPhoneVersion.h"
 
 @interface MoreDetailsViewController : UIViewController
 {
-    }
+    
+}
 
 @property(strong, nonatomic) NSString* shortName;
 @property(strong, nonatomic) NSString* text;

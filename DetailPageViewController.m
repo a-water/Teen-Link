@@ -72,9 +72,29 @@
 }
 
 -(void)setupTextArea:(NSString*) text{
+    
+    int textTopPadding = -30;
+    int readMoreTopPadding = 125;
+    if([SDiPhoneVersion deviceSize] == iPhone35inch){
+        textTopPadding = -30;
+        readMoreTopPadding = 128;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone4inch){
+        textTopPadding = -20;
+        readMoreTopPadding = 132;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        textTopPadding = -10;
+        readMoreTopPadding = 137;
+    }
+    else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
+        textTopPadding = 0;
+        readMoreTopPadding = 139;
+    }
+
     UIView *textArea = [[UIView alloc]initWithFrame:CGRectMake(0, 184, self.view.frame.size.width, 200)];
     
-    self.detailTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, -30, self.view.frame.size.width-30, 187)];
+    self.detailTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, textTopPadding, self.view.frame.size.width-30, 187)];
     self.detailTextLabel.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1]; /*#0b0849*/
     self.detailTextLabel.numberOfLines = 5;
     self.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
@@ -84,7 +104,7 @@
     //    textArea.layer.borderColor = [[UIColor redColor]CGColor];
     [textArea addSubview:self.detailTextLabel];
     
-    UIButton *readMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(textArea.frame.size.width - 110, 125, 92.5, 22.5)];
+    UIButton *readMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(textArea.frame.size.width - 110, readMoreTopPadding, 92.5, 28.5)];
     [readMoreButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
     readMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12];
     [readMoreButton setTitle:@"READ MORE" forState:UIControlStateNormal];

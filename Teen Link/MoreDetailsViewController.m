@@ -26,27 +26,7 @@
     [self.view addSubview:self.scrollView];
     
     [self setupHeader];
-    
-    UILabel *detailTextLabel = [[UILabel alloc]init];
-    detailTextLabel.numberOfLines = 0;
-    detailTextLabel.text = self.text;
-    detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
-    NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                          [UIFont fontWithName:@"HelveticaNeue" size:14], NSFontAttributeName,
-                                          nil];
-    
-    CGRect frame = [detailTextLabel.text boundingRectWithSize:CGSizeMake(263, 2000.0)
-                                            options:NSStringDrawingUsesLineFragmentOrigin
-                                         attributes:attributesDictionary
-                                            context:nil];
-    detailTextLabel.frame = CGRectMake(15, 208, self.view.frame.size.width - 30, frame.size.height);
-    detailTextLabel.backgroundColor = [UIColor whiteColor];
-//    detailTextLabel.layer.borderWidth = 1.0f;
-//    detailTextLabel.layer.borderColor = [[UIColor redColor]CGColor];
-    [detailTextLabel sizeToFit];
-//    [textArea addSubview:detailTextLabel];
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, frame.size.height + 222);
-    [self.scrollView addSubview:detailTextLabel];
+    [self setupTextArea:self.text];
 }
 
 -(void)setupNavBarItems
@@ -61,6 +41,38 @@
                                                                             style:UIBarButtonItemStyleBordered
                                                                            target:nil
                                                                         action:nil];
+}
+
+-(void)setupTextArea:(NSString*)text{
+    
+    int textTopPadding = 208;
+    if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){
+        textTopPadding = 208;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        textTopPadding = 230;
+    }
+    else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
+        textTopPadding = 230;
+    }
+    
+    UILabel *detailTextLabel = [[UILabel alloc]init];
+    detailTextLabel.numberOfLines = 0;
+    detailTextLabel.text = text;
+    detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
+    NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          [UIFont fontWithName:@"HelveticaNeue" size:14], NSFontAttributeName,
+                                          nil];
+    
+    CGRect frame = [detailTextLabel.text boundingRectWithSize:CGSizeMake(263, 2000.0)
+                                                      options:NSStringDrawingUsesLineFragmentOrigin
+                                                   attributes:attributesDictionary
+                                                      context:nil];
+    detailTextLabel.frame = CGRectMake(15, textTopPadding, self.view.frame.size.width - 30, frame.size.height);
+    detailTextLabel.backgroundColor = [UIColor whiteColor];
+    [detailTextLabel sizeToFit];
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, frame.size.height + 222);
+    [self.scrollView addSubview:detailTextLabel];
 }
 
 -(void)setupHeader{
