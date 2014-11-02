@@ -75,21 +75,26 @@
     
     int textTopPadding = -30;
     int readMoreTopPadding = 125;
+    double readMoreHeight = 22.5;
     if([SDiPhoneVersion deviceSize] == iPhone35inch){
         textTopPadding = -30;
         readMoreTopPadding = 128;
+        readMoreHeight = 22.5;
     }
     else if([SDiPhoneVersion deviceSize] == iPhone4inch){
-        textTopPadding = -20;
+        textTopPadding = -25;
         readMoreTopPadding = 132;
+        readMoreHeight = 22.5;
     }
     else if([SDiPhoneVersion deviceSize] == iPhone47inch){
-        textTopPadding = -10;
+        textTopPadding = -8;
         readMoreTopPadding = 137;
+        readMoreHeight = 26.5;
     }
     else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
-        textTopPadding = 0;
-        readMoreTopPadding = 139;
+        textTopPadding = -10;
+        readMoreTopPadding = 136;
+        readMoreHeight = 28.5;
     }
 
     UIView *textArea = [[UIView alloc]initWithFrame:CGRectMake(0, 184, self.view.frame.size.width, 200)];
@@ -100,11 +105,9 @@
     self.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
     textArea.backgroundColor = [UIColor whiteColor];
     self.detailTextLabel.text = text;
-    //    textArea.layer.borderWidth = 1.0f;
-    //    textArea.layer.borderColor = [[UIColor redColor]CGColor];
     [textArea addSubview:self.detailTextLabel];
     
-    UIButton *readMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(textArea.frame.size.width - 110, readMoreTopPadding, 92.5, 28.5)];
+    UIButton *readMoreButton = [[UIButton alloc]initWithFrame:CGRectMake(textArea.frame.size.width - 110, readMoreTopPadding, 92.5, readMoreHeight)];
     [readMoreButton setBackgroundColor:[UIColor colorWithRed:0.925 green:0 blue:0.549 alpha:1] /*#ec008c*/];
     readMoreButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12];
     [readMoreButton setTitle:@"READ MORE" forState:UIControlStateNormal];
@@ -153,6 +156,30 @@
     UIFont *helThirtyFour = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
     UIFont *helTwentyfour = [UIFont fontWithName:@"HelveticaNeue" size:12];
     
+    int phoneLeftPadding = 0;
+    int urlLeftPadding = 99;
+    int mapsLeftPadding = 196;
+    int textWidth = 275;
+    if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){
+        phoneLeftPadding = 0;
+        urlLeftPadding = 99;
+        mapsLeftPadding = 196;
+        textWidth = 275;
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        phoneLeftPadding = 12;
+        urlLeftPadding = 129;
+        mapsLeftPadding = 243;
+        textWidth = 300;
+    }
+    else if ([SDiPhoneVersion deviceSize] == iPhone55inch){
+        phoneLeftPadding = 18;
+        urlLeftPadding = 147;
+        mapsLeftPadding = 278;
+        textWidth = 300;
+    }
+
+    
     for(int i=0; i<dataArray.count; i++){
         
         if([[[dataArray objectAtIndex:i]name] isEqualToString:self.headerText]){
@@ -164,20 +191,19 @@
                 
                 Resource *resource = [matchItem.contactsArray objectAtIndex:x];
                 
-                bg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width -20, 122.5)];
+                bg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width -20, 122.5)]; //bg.layer.borderColor = [[UIColor redColor]CGColor]; bg.layer.borderWidth = 1.0f;
                 [bg setImage:[UIImage imageNamed:@"c_resource_entry_bg.png"]];
-                bg.contentMode = UIViewContentModeScaleAspectFit;
+                bg.contentMode = UIViewContentModeScaleToFill;
                 
-                callBtn = [[Callbutton alloc]initWithFrame:CGRectMake(0, 80, 99, 40)];
+                callBtn = [[Callbutton alloc]initWithFrame:CGRectMake(phoneLeftPadding, 80, 99, 40)];
                 [[callBtn imageView]setContentMode:UIViewContentModeScaleAspectFit];
                 [callBtn setImage:callImage forState:UIControlStateNormal];
                 callBtn.phoneNumber = resource.phoneNumber;
-                if([resource.phoneNumber isEqualToString:@"" ]|| resource.phoneNumber
-                     == nil){
+                if([resource.phoneNumber isEqualToString:@"" ]|| resource.phoneNumber == nil){
                     [callBtn setImage:callImageDisabled forState:UIControlStateNormal];
                     callBtn.userInteractionEnabled = NO;
                 }
-                urlBtn = [[WebButton alloc]initWithFrame:CGRectMake(99, 80, 99, 40)];
+                urlBtn = [[WebButton alloc]initWithFrame:CGRectMake(urlLeftPadding, 80, 99, 40)];
                 [[urlBtn imageView]setContentMode:UIViewContentModeScaleAspectFit];
                 [urlBtn setImage:webImage forState:UIControlStateNormal];
                 urlBtn.urlAddress = resource.websiteAddress;
@@ -185,7 +211,7 @@
                     [urlBtn setImage:webImageDisabled forState:UIControlStateNormal];
                     urlBtn.userInteractionEnabled = NO;
                 }
-                mapsBtn= [[MapButton alloc]initWithFrame:CGRectMake(196, 80, 99, 40)];
+                mapsBtn= [[MapButton alloc]initWithFrame:CGRectMake(mapsLeftPadding, 79, 99, 40)];
                 [[mapsBtn imageView]setContentMode:UIViewContentModeScaleAspectFit];
                 [mapsBtn setImage:mapsImage forState:UIControlStateNormal];
                 mapsBtn.physicalAddress = resource.locationAddress;
@@ -205,21 +231,19 @@
                 [blockView addSubview:urlBtn];
                 [blockView addSubview:mapsBtn];
                 
-                UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(15, 10, 275, 35)];
+                UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(15, 10, textWidth, 35)];
                 name.font = helThirtyFour;
-                //                    name.minimumScaleFactor = 0.6;
-                //                    name.adjustsFontSizeToFitWidth = YES;
                 name.textColor = [UIColor colorWithRed:0.043 green:0.031 blue:0.286 alpha:1] /*#0b0849*/;
                 name.text = resource.resourceName;
                 
-                UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(15, 30, 275, 35)];
+                UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(15, 30, textWidth, 35)];
                 address.font = helTwentyfour;
                 address.minimumScaleFactor = 0.8;
                 address.adjustsFontSizeToFitWidth = YES;
                 address.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1] /*666666*/;
                 address.text = resource.locationAddress;
                 
-                UILabel *hours = [[UILabel alloc]initWithFrame:CGRectMake(15, 45, 275, 35)];
+                UILabel *hours = [[UILabel alloc]initWithFrame:CGRectMake(15, 45, textWidth, 35)];
                 hours.font = helTwentyfour;
                 hours.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1] /*666666*/;
                 hours.text = resource.hours;

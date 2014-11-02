@@ -236,6 +236,50 @@
 			path = "Hero graphics";
 			sourceTree = "<group>";
 		};
+		9369BDCA1A059F8B0071513B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				93324E2219E197FF0059E50C /* MapButton.h */,
+				93324E2319E197FF0059E50C /* MapButton.m */,
+				93A2AF7519E12BF900E9316F /* Callbutton.h */,
+				93A2AF7619E12BF900E9316F /* Callbutton.m */,
+				93A2AF7819E1307A00E9316F /* WebButton.h */,
+				93A2AF7919E1307A00E9316F /* WebButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		9369BDCB1A059F9B0071513B /* Detail Pages */ = {
+			isa = PBXGroup;
+			children = (
+				93C3072419E079A400E214C3 /* DetailPageViewController.h */,
+				93C3072519E079A400E214C3 /* DetailPageViewController.m */,
+				93EAF86719E119F90052F54A /* MoreDetailsViewController.h */,
+				93EAF86819E119F90052F54A /* MoreDetailsViewController.m */,
+			);
+			name = "Detail Pages";
+			sourceTree = "<group>";
+		};
+		9369BDCC1A059FBB0071513B /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				93DB1F2C19DFAD280049494C /* Resource.h */,
+				93DB1F2D19DFAD280049494C /* Resource.m */,
+				939831BF19E0FDF8006BFEC6 /* Item.h */,
+				939831C019E0FDF8006BFEC6 /* Item.m */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
+		9369BDCD1A05AAA90071513B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				931BDF9419E1D26F00035D56 /* MenuViewController.h */,
+				931BDF9519E1D26F00035D56 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		93D3FEDA19E082530041AF9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,27 +331,15 @@
 			children = (
 				93DB1F0519DFA6D50049494C /* AppDelegate.h */,
 				93DB1F0619DFA6D50049494C /* AppDelegate.m */,
-				93C3072419E079A400E214C3 /* DetailPageViewController.h */,
-				93C3072519E079A400E214C3 /* DetailPageViewController.m */,
-				93324E2219E197FF0059E50C /* MapButton.h */,
-				93324E2319E197FF0059E50C /* MapButton.m */,
-				93A2AF7519E12BF900E9316F /* Callbutton.h */,
-				93A2AF7619E12BF900E9316F /* Callbutton.m */,
-				93A2AF7819E1307A00E9316F /* WebButton.h */,
-				93A2AF7919E1307A00E9316F /* WebButton.m */,
-				93EAF86719E119F90052F54A /* MoreDetailsViewController.h */,
-				93EAF86819E119F90052F54A /* MoreDetailsViewController.m */,
+				9369BDCB1A059F9B0071513B /* Detail Pages */,
+				9369BDCA1A059F8B0071513B /* Buttons */,
+				9369BDCC1A059FBB0071513B /* Data Objects */,
+				9369BDCD1A05AAA90071513B /* Menu */,
 				93DB1F3419E067710049494C /* GridPageViewController.h */,
 				93DB1F3519E067710049494C /* GridPageViewController.m */,
 				93DB1F0B19DFA6D50049494C /* Main.storyboard */,
-				931BDF9419E1D26F00035D56 /* MenuViewController.h */,
-				931BDF9519E1D26F00035D56 /* MenuViewController.m */,
 				93DB1F2F19E0659D0049494C /* LandingPageViewController.h */,
 				93DB1F3019E0659D0049494C /* LandingPageViewController.m */,
-				93DB1F2C19DFAD280049494C /* Resource.h */,
-				93DB1F2D19DFAD280049494C /* Resource.m */,
-				939831BF19E0FDF8006BFEC6 /* Item.h */,
-				939831C019E0FDF8006BFEC6 /* Item.m */,
 				93054F7519F22B340019C103 /* SDiPhoneVersion.h */,
 				93054F7619F22B340019C103 /* SDiPhoneVersion.m */,
 				93DB1F1019DFA6D50049494C /* LaunchScreen.xib */,

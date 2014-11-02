@@ -109,17 +109,17 @@
 
 -(void)setupServicesBlock{
     
-    int textAndAlcoholXVal = 0;
-    int btnWidthSize = 0;
-    int btwnHeightSize = 0;
-    int suicideXval = 0;
-    int fontSize = 0;
-    int viewAllXVal = 0;
-    int viewAllYVal = 0;
-    double viewAllHeight = 0;
-    double viewAllWidth = 0;
-    int viewMoreFontSize = 0;
-    int blockYVal = 0;
+    int textAndAlcoholXVal = 15;
+    int btnWidthSize = 150;
+    int btwnHeightSize = 98;
+    int suicideXval = 160;
+    int fontSize = 28;
+    int viewAllXVal = 210;
+    int viewAllYVal = 144;
+    double viewAllHeight = 92.5;
+    double viewAllWidth = 22.5;
+    int viewMoreFontSize = 12;
+    int blockYVal = 210;
     int textSpacer = 0;
     
     if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){
@@ -194,17 +194,17 @@
 
 -(void)setupOpportuniesBlock{
     
-    int textAndVolunteeringXVal = 0;
-    int btnWidthSize = 0;
-    int btwnHeightSize = 0;
-    int youthXval = 0;
-    int fontSize = 0;
-    int viewAllXVal = 0;
-    int viewAllYVal = 0;
-    double viewAllHeight = 0;
-    double viewAllWidth = 0;
-    int viewMoreFontSize = 0;
-    int blockYVal = 0;
+    int textAndVolunteeringXVal = 15;
+    int btnWidthSize = 150;
+    int btwnHeightSize = 98;
+    int youthXval = 160;
+    int fontSize = 28;
+    int viewAllXVal = 210;
+    int viewAllYVal = 144;
+    double viewAllHeight = 92.5;
+    double viewAllWidth = 22.5;
+    int viewMoreFontSize = 12;
+    int blockYVal = 380;
     int textSpacer = 0;
     
     if([SDiPhoneVersion deviceSize] == iPhone35inch || [SDiPhoneVersion deviceSize] == iPhone4inch){

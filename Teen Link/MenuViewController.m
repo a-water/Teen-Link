@@ -19,15 +19,15 @@
     
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
-
+    
     menuMainItems = [[NSArray alloc]initWithObjects:@"ABOUT TEENLINK",@"TIPS FOR DEALING W/AGENCIES",@"OPEN POSITIONS", @"PARTNER CONTACT INFO", @"EVERYTHING WE DO...", nil];
     
     subItems = [[NSArray alloc]initWithObjects:@"Alcohol, Drugs & Addiction", @"At-Risk Youth", @"Birth Control/Pregnancy", @"Child Abuse", @"Counseling", @"Culturally Specific Agencies", @"Dating & Domestic Violence", @"Eating Disorders", @"Education", @"Employment & Job Training", nil];
     
-//    [self setupNavBarItems];
+    //    [self setupNavBarItems];
     [self setupTabBar];
     [self setupTableView];
-  
+    
 }
 
 -(void)setupTabBar{
@@ -51,7 +51,7 @@
 }
 
 -(void)setupTableView{
-    UITableView *menuList = [[UITableView alloc]initWithFrame:CGRectMake(0, 66, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    UITableView *menuList = [[UITableView alloc]initWithFrame:CGRectMake(0, 66, self.view.frame.size.width, self.view.frame.size.height-66) style:UITableViewStylePlain];
     menuList.backgroundColor = [UIColor whiteColor];
     menuList.separatorColor = [UIColor clearColor];
     menuList.delegate = self;
@@ -96,21 +96,13 @@
         cell.textLabel.text = [menuMainItems objectAtIndex:indexPath.row];
         cell.textLabel.font = dinFont;
         cell.textLabel.textColor = [UIColor colorWithRed:0.431 green:0.431 blue:0.431 alpha:1] /*E6E6E6*/;
+        
         if(indexPath.row != [menuMainItems count] -1){
-            
             UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, 2)];
             line.backgroundColor = [UIColor colorWithRed:239/255.0f green:239/255.0f blue:239/255.0f alpha:1.0f];
             [cell addSubview:line];
         }
-        else{
-            cell.textLabel.text = @"";
-            UILabel *lastMainCell = [[UILabel alloc]initWithFrame:CGRectMake(15, 10, cell.frame.size.width, 30)];
-            lastMainCell.text = [menuMainItems objectAtIndex:indexPath.row];
-            lastMainCell.font = dinFont;
-            lastMainCell.textColor = [UIColor colorWithRed:0.431 green:0.431 blue:0.431 alpha:1] /*E6E6E6*/;
-            [cell addSubview:lastMainCell];
-        }
-
+        
     }
     else{
         static NSString *CellIdentifier = @"minorCell";
@@ -119,7 +111,7 @@
         cell.textLabel.font = helFont;
         cell.textLabel.textColor = [UIColor colorWithRed:236/255.0f green:0/255.0f blue:140/255.0f alpha:1.0f]; /*EC008C*/;
     }
-
+    
     return cell;
 }
 
