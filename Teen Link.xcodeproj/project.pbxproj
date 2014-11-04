@@ -20,26 +20,10 @@
 		93324E2419E197FF0059E50C /* MapButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93324E2319E197FF0059E50C /* MapButton.m */; };
 		93324E4F19E1C0CC0059E50C /* teen_link.json in Resources */ = {isa = PBXBuildFile; fileRef = 93324E4E19E1C0CC0059E50C /* teen_link.json */; };
 		93324E6619E1C71E0059E50C /* alcohol.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5119E1C71E0059E50C /* alcohol.png */; };
-		93324E6719E1C71E0059E50C /* at-risk.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5219E1C71E0059E50C /* at-risk.png */; };
 		93324E6819E1C71E0059E50C /* birth.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5319E1C71E0059E50C /* birth.png */; };
-		93324E6919E1C71E0059E50C /* child.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5419E1C71E0059E50C /* child.png */; };
-		93324E6A19E1C71E0059E50C /* counseling.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5519E1C71E0059E50C /* counseling.png */; };
-		93324E6B19E1C71E0059E50C /* culturally.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5619E1C71E0059E50C /* culturally.png */; };
 		93324E6C19E1C71E0059E50C /* dating.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5719E1C71E0059E50C /* dating.png */; };
-		93324E6D19E1C71E0059E50C /* eating.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5819E1C71E0059E50C /* eating.png */; };
-		93324E6E19E1C71E0059E50C /* education.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5919E1C71E0059E50C /* education.png */; };
-		93324E6F19E1C71E0059E50C /* employment.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5A19E1C71E0059E50C /* employment.png */; };
 		93324E7019E1C71E0059E50C /* glbtq.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5B19E1C71E0059E50C /* glbtq.png */; };
-		93324E7119E1C71E0059E50C /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5C19E1C71E0059E50C /* health.png */; };
-		93324E7219E1C71E0059E50C /* homelessness.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5D19E1C71E0059E50C /* homelessness.png */; };
 		93324E7319E1C71E0059E50C /* leadership.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5E19E1C71E0059E50C /* leadership.png */; };
-		93324E7419E1C71E0059E50C /* legal.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E5F19E1C71E0059E50C /* legal.png */; };
-		93324E7519E1C71E0059E50C /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E6019E1C71E0059E50C /* people.png */; };
-		93324E7619E1C71E0059E50C /* rape.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E6119E1C71E0059E50C /* rape.png */; };
-		93324E7719E1C71E0059E50C /* recreation.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E6219E1C71E0059E50C /* recreation.png */; };
-		93324E7819E1C71E0059E50C /* stds.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E6319E1C71E0059E50C /* stds.png */; };
-		93324E7919E1C71E0059E50C /* suicide.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E6419E1C71E0059E50C /* suicide.png */; };
-		93324E7A19E1C71E0059E50C /* volunteering.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E6519E1C71E0059E50C /* volunteering.png */; };
 		93324E7E19E1C8B60059E50C /* c_icon_call_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E7B19E1C8B60059E50C /* c_icon_call_disabled.png */; };
 		93324E7F19E1C8B60059E50C /* c_icon_map_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E7C19E1C8B60059E50C /* c_icon_map_disabled.png */; };
 		93324E8019E1C8B60059E50C /* c_icon_website_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 93324E7D19E1C8B60059E50C /* c_icon_website_disabled.png */; };
@@ -57,6 +41,22 @@
 		93A2AF7219E1250200E9316F /* menu_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 93A2AF7119E1250200E9316F /* menu_btn.png */; };
 		93A2AF7719E12BF900E9316F /* Callbutton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2AF7619E12BF900E9316F /* Callbutton.m */; };
 		93A2AF7A19E1307A00E9316F /* WebButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A2AF7919E1307A00E9316F /* WebButton.m */; };
+		93AEF60C1A086A8600CF0FD8 /* at-risk.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF5FC1A086A8600CF0FD8 /* at-risk.png */; };
+		93AEF60D1A086A8600CF0FD8 /* child.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF5FD1A086A8600CF0FD8 /* child.png */; };
+		93AEF60E1A086A8600CF0FD8 /* counseling.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF5FE1A086A8600CF0FD8 /* counseling.png */; };
+		93AEF60F1A086A8600CF0FD8 /* culturally.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF5FF1A086A8600CF0FD8 /* culturally.png */; };
+		93AEF6101A086A8600CF0FD8 /* eating.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6001A086A8600CF0FD8 /* eating.png */; };
+		93AEF6111A086A8600CF0FD8 /* education.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6011A086A8600CF0FD8 /* education.png */; };
+		93AEF6121A086A8600CF0FD8 /* employment.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6021A086A8600CF0FD8 /* employment.png */; };
+		93AEF6131A086A8600CF0FD8 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6031A086A8600CF0FD8 /* health.png */; };
+		93AEF6141A086A8600CF0FD8 /* homelessness.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6041A086A8600CF0FD8 /* homelessness.png */; };
+		93AEF6151A086A8700CF0FD8 /* legal.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6051A086A8600CF0FD8 /* legal.png */; };
+		93AEF6161A086A8700CF0FD8 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6061A086A8600CF0FD8 /* people.png */; };
+		93AEF6171A086A8700CF0FD8 /* rape.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6071A086A8600CF0FD8 /* rape.png */; };
+		93AEF6181A086A8700CF0FD8 /* recreation.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6081A086A8600CF0FD8 /* recreation.png */; };
+		93AEF6191A086A8700CF0FD8 /* stds.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF6091A086A8600CF0FD8 /* stds.png */; };
+		93AEF61A1A086A8700CF0FD8 /* suicide.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF60A1A086A8600CF0FD8 /* suicide.png */; };
+		93AEF61B1A086A8700CF0FD8 /* volunteering.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF60B1A086A8600CF0FD8 /* volunteering.png */; };
 		93C3072619E079A400E214C3 /* DetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C3072519E079A400E214C3 /* DetailPageViewController.m */; };
 		93D3FEDC19E082890041AF9B /* DIN Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D3FEDB19E082640041AF9B /* DIN Condensed Bold.ttf */; };
 		93DB1F0419DFA6D50049494C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DB1F0319DFA6D50049494C /* main.m */; };
@@ -99,26 +99,10 @@
 		93324E2319E197FF0059E50C /* MapButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapButton.m; sourceTree = "<group>"; };
 		93324E4E19E1C0CC0059E50C /* teen_link.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teen_link.json; sourceTree = "<group>"; };
 		93324E5119E1C71E0059E50C /* alcohol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alcohol.png; sourceTree = "<group>"; };
-		93324E5219E1C71E0059E50C /* at-risk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "at-risk.png"; sourceTree = "<group>"; };
 		93324E5319E1C71E0059E50C /* birth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birth.png; sourceTree = "<group>"; };
-		93324E5419E1C71E0059E50C /* child.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = child.png; sourceTree = "<group>"; };
-		93324E5519E1C71E0059E50C /* counseling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = counseling.png; sourceTree = "<group>"; };
-		93324E5619E1C71E0059E50C /* culturally.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = culturally.png; sourceTree = "<group>"; };
 		93324E5719E1C71E0059E50C /* dating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dating.png; sourceTree = "<group>"; };
-		93324E5819E1C71E0059E50C /* eating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eating.png; sourceTree = "<group>"; };
-		93324E5919E1C71E0059E50C /* education.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = education.png; sourceTree = "<group>"; };
-		93324E5A19E1C71E0059E50C /* employment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = employment.png; sourceTree = "<group>"; };
 		93324E5B19E1C71E0059E50C /* glbtq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glbtq.png; sourceTree = "<group>"; };
-		93324E5C19E1C71E0059E50C /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
-		93324E5D19E1C71E0059E50C /* homelessness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homelessness.png; sourceTree = "<group>"; };
 		93324E5E19E1C71E0059E50C /* leadership.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leadership.png; sourceTree = "<group>"; };
-		93324E5F19E1C71E0059E50C /* legal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legal.png; sourceTree = "<group>"; };
-		93324E6019E1C71E0059E50C /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
-		93324E6119E1C71E0059E50C /* rape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rape.png; sourceTree = "<group>"; };
-		93324E6219E1C71E0059E50C /* recreation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recreation.png; sourceTree = "<group>"; };
-		93324E6319E1C71E0059E50C /* stds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stds.png; sourceTree = "<group>"; };
-		93324E6419E1C71E0059E50C /* suicide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suicide.png; sourceTree = "<group>"; };
-		93324E6519E1C71E0059E50C /* volunteering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volunteering.png; sourceTree = "<group>"; };
 		93324E7B19E1C8B60059E50C /* c_icon_call_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_icon_call_disabled.png; sourceTree = "<group>"; };
 		93324E7C19E1C8B60059E50C /* c_icon_map_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_icon_map_disabled.png; sourceTree = "<group>"; };
 		93324E7D19E1C8B60059E50C /* c_icon_website_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_icon_website_disabled.png; sourceTree = "<group>"; };
@@ -139,6 +123,22 @@
 		93A2AF7619E12BF900E9316F /* Callbutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callbutton.m; sourceTree = "<group>"; };
 		93A2AF7819E1307A00E9316F /* WebButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebButton.h; sourceTree = "<group>"; };
 		93A2AF7919E1307A00E9316F /* WebButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebButton.m; sourceTree = "<group>"; };
+		93AEF5FC1A086A8600CF0FD8 /* at-risk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "at-risk.png"; sourceTree = "<group>"; };
+		93AEF5FD1A086A8600CF0FD8 /* child.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = child.png; sourceTree = "<group>"; };
+		93AEF5FE1A086A8600CF0FD8 /* counseling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = counseling.png; sourceTree = "<group>"; };
+		93AEF5FF1A086A8600CF0FD8 /* culturally.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = culturally.png; sourceTree = "<group>"; };
+		93AEF6001A086A8600CF0FD8 /* eating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eating.png; sourceTree = "<group>"; };
+		93AEF6011A086A8600CF0FD8 /* education.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = education.png; sourceTree = "<group>"; };
+		93AEF6021A086A8600CF0FD8 /* employment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = employment.png; sourceTree = "<group>"; };
+		93AEF6031A086A8600CF0FD8 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
+		93AEF6041A086A8600CF0FD8 /* homelessness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homelessness.png; sourceTree = "<group>"; };
+		93AEF6051A086A8600CF0FD8 /* legal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legal.png; sourceTree = "<group>"; };
+		93AEF6061A086A8600CF0FD8 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		93AEF6071A086A8600CF0FD8 /* rape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rape.png; sourceTree = "<group>"; };
+		93AEF6081A086A8600CF0FD8 /* recreation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recreation.png; sourceTree = "<group>"; };
+		93AEF6091A086A8600CF0FD8 /* stds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stds.png; sourceTree = "<group>"; };
+		93AEF60A1A086A8600CF0FD8 /* suicide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suicide.png; sourceTree = "<group>"; };
+		93AEF60B1A086A8600CF0FD8 /* volunteering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volunteering.png; sourceTree = "<group>"; };
 		93C3072419E079A400E214C3 /* DetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailPageViewController.h; path = ../DetailPageViewController.h; sourceTree = "<group>"; };
 		93C3072519E079A400E214C3 /* DetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailPageViewController.m; path = ../DetailPageViewController.m; sourceTree = "<group>"; };
 		93D3FEDB19E082640041AF9B /* DIN Condensed Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Condensed Bold.ttf"; sourceTree = "<group>"; };
@@ -211,27 +211,27 @@
 		93324E5019E1C71E0059E50C /* Hero graphics */ = {
 			isa = PBXGroup;
 			children = (
+				93AEF5FC1A086A8600CF0FD8 /* at-risk.png */,
+				93AEF5FD1A086A8600CF0FD8 /* child.png */,
+				93AEF5FE1A086A8600CF0FD8 /* counseling.png */,
+				93AEF5FF1A086A8600CF0FD8 /* culturally.png */,
+				93AEF6001A086A8600CF0FD8 /* eating.png */,
+				93AEF6011A086A8600CF0FD8 /* education.png */,
+				93AEF6021A086A8600CF0FD8 /* employment.png */,
+				93AEF6031A086A8600CF0FD8 /* health.png */,
+				93AEF6041A086A8600CF0FD8 /* homelessness.png */,
+				93AEF6051A086A8600CF0FD8 /* legal.png */,
+				93AEF6061A086A8600CF0FD8 /* people.png */,
+				93AEF6071A086A8600CF0FD8 /* rape.png */,
+				93AEF6081A086A8600CF0FD8 /* recreation.png */,
+				93AEF6091A086A8600CF0FD8 /* stds.png */,
+				93AEF60A1A086A8600CF0FD8 /* suicide.png */,
+				93AEF60B1A086A8600CF0FD8 /* volunteering.png */,
 				93324E5119E1C71E0059E50C /* alcohol.png */,
-				93324E5219E1C71E0059E50C /* at-risk.png */,
 				93324E5319E1C71E0059E50C /* birth.png */,
-				93324E5419E1C71E0059E50C /* child.png */,
-				93324E5519E1C71E0059E50C /* counseling.png */,
-				93324E5619E1C71E0059E50C /* culturally.png */,
 				93324E5719E1C71E0059E50C /* dating.png */,
-				93324E5819E1C71E0059E50C /* eating.png */,
-				93324E5919E1C71E0059E50C /* education.png */,
-				93324E5A19E1C71E0059E50C /* employment.png */,
 				93324E5B19E1C71E0059E50C /* glbtq.png */,
-				93324E5C19E1C71E0059E50C /* health.png */,
-				93324E5D19E1C71E0059E50C /* homelessness.png */,
 				93324E5E19E1C71E0059E50C /* leadership.png */,
-				93324E5F19E1C71E0059E50C /* legal.png */,
-				93324E6019E1C71E0059E50C /* people.png */,
-				93324E6119E1C71E0059E50C /* rape.png */,
-				93324E6219E1C71E0059E50C /* recreation.png */,
-				93324E6319E1C71E0059E50C /* stds.png */,
-				93324E6419E1C71E0059E50C /* suicide.png */,
-				93324E6519E1C71E0059E50C /* volunteering.png */,
 			);
 			path = "Hero graphics";
 			sourceTree = "<group>";
@@ -467,55 +467,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93324E6919E1C71E0059E50C /* child.png in Resources */,
 				9396EB0419E0B92600EF2513 /* c_icon_website.png in Resources */,
-				93324E6F19E1C71E0059E50C /* employment.png in Resources */,
 				93324E6819E1C71E0059E50C /* birth.png in Resources */,
-				93324E7819E1C71E0059E50C /* stds.png in Resources */,
 				939831B519E0DE20006BFEC6 /* a_block2.png in Resources */,
 				93EAF86619E115E40052F54A /* back_btn.png in Resources */,
 				93250F6019E0D13A006C6F06 /* a_whale.png in Resources */,
-				93324E6719E1C71E0059E50C /* at-risk.png in Resources */,
-				93324E6A19E1C71E0059E50C /* counseling.png in Resources */,
+				93AEF6151A086A8700CF0FD8 /* legal.png in Resources */,
 				9396EB0219E0B92600EF2513 /* c_icon_call.png in Resources */,
-				93324E7619E1C71E0059E50C /* rape.png in Resources */,
 				931BDFA119E1E34500035D56 /* Default.png in Resources */,
 				939831AF19E0D66E006BFEC6 /* a_grey_bg.png in Resources */,
 				93324E4F19E1C0CC0059E50C /* teen_link.json in Resources */,
 				93D3FEDC19E082890041AF9B /* DIN Condensed Bold.ttf in Resources */,
+				93AEF6171A086A8700CF0FD8 /* rape.png in Resources */,
+				93AEF6191A086A8700CF0FD8 /* stds.png in Resources */,
+				93AEF60D1A086A8600CF0FD8 /* child.png in Resources */,
+				93AEF60F1A086A8600CF0FD8 /* culturally.png in Resources */,
 				93324E7319E1C71E0059E50C /* leadership.png in Resources */,
 				93324E7E19E1C8B60059E50C /* c_icon_call_disabled.png in Resources */,
 				9396EB0319E0B92600EF2513 /* c_icon_map.png in Resources */,
+				93AEF6181A086A8700CF0FD8 /* recreation.png in Resources */,
 				93DB1F0D19DFA6D50049494C /* Main.storyboard in Resources */,
-				93324E6B19E1C71E0059E50C /* culturally.png in Resources */,
 				93A2AF7219E1250200E9316F /* menu_btn.png in Resources */,
 				93324E6C19E1C71E0059E50C /* dating.png in Resources */,
 				939831B719E0DE20006BFEC6 /* a_block4.png in Resources */,
 				931BDF9F19E1E26C00035D56 /* Default-568h@2x.png in Resources */,
-				93324E7419E1C71E0059E50C /* legal.png in Resources */,
+				93AEF6111A086A8600CF0FD8 /* education.png in Resources */,
 				93250F6219E0D221006C6F06 /* a_call_btn.png in Resources */,
 				93324E8019E1C8B60059E50C /* c_icon_website_disabled.png in Resources */,
-				93324E7719E1C71E0059E50C /* recreation.png in Resources */,
 				93324E6619E1C71E0059E50C /* alcohol.png in Resources */,
-				93324E7219E1C71E0059E50C /* homelessness.png in Resources */,
+				93AEF6141A086A8600CF0FD8 /* homelessness.png in Resources */,
 				931BDFA319E1E3DA00035D56 /* Default@2x.png in Resources */,
 				93DB1F1219DFA6D50049494C /* LaunchScreen.xib in Resources */,
 				939831B419E0DE20006BFEC6 /* a_block1.png in Resources */,
-				93324E7A19E1C71E0059E50C /* volunteering.png in Resources */,
 				931BDF9B19E1DE3500035D56 /* Images-2.xcassets in Resources */,
+				93AEF6161A086A8700CF0FD8 /* people.png in Resources */,
 				93324E7F19E1C8B60059E50C /* c_icon_map_disabled.png in Resources */,
+				93AEF6131A086A8600CF0FD8 /* health.png in Resources */,
+				93AEF61A1A086A8700CF0FD8 /* suicide.png in Resources */,
 				931BDFAD19E1F03000035D56 /* Icon@2x.png in Resources */,
+				93AEF60E1A086A8600CF0FD8 /* counseling.png in Resources */,
 				93A2AF7019E124FC00E9316F /* logo.png in Resources */,
 				931BDFA919E1EA9A00035D56 /* Icon-120.png in Resources */,
+				93AEF60C1A086A8600CF0FD8 /* at-risk.png in Resources */,
 				939831B619E0DE20006BFEC6 /* a_block3.png in Resources */,
-				93324E6E19E1C71E0059E50C /* education.png in Resources */,
+				93AEF6121A086A8600CF0FD8 /* employment.png in Resources */,
 				93DB1F0F19DFA6D50049494C /* Images.xcassets in Resources */,
-				93324E6D19E1C71E0059E50C /* eating.png in Resources */,
 				93324E7019E1C71E0059E50C /* glbtq.png in Resources */,
-				93324E7519E1C71E0059E50C /* people.png in Resources */,
-				93324E7919E1C71E0059E50C /* suicide.png in Resources */,
-				93324E7119E1C71E0059E50C /* health.png in Resources */,
 				9396EB0619E0C35900EF2513 /* c_resource_entry_bg.png in Resources */,
+				93AEF6101A086A8600CF0FD8 /* eating.png in Resources */,
+				93AEF61B1A086A8700CF0FD8 /* volunteering.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

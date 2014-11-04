@@ -20,9 +20,8 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
 
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    //    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height + 200)];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height + 200 );
-    self.scrollView.backgroundColor = [UIColor whiteColor];//[UIColor colorWithRed:0.847 green:0.847 blue:0.847 alpha:1] /*#d8d8d8*/;
+    self.scrollView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollView];
     
     [self setupHeader];
@@ -33,9 +32,7 @@
 {
     self.title = @"TEEN LINK";
     //bar color
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    //    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];    
     //back button
     self.navigationItem.backBarButtonItem =[[UIBarButtonItem alloc] initWithTitle:@""
                                                                             style:UIBarButtonItemStyleBordered

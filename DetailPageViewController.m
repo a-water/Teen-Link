@@ -45,7 +45,7 @@
     
     shortName = matchItem.shortName;
     textToSend = matchItem.paragraphText;
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, (self.view.frame.size.height + (130 * numContacts)) - 142);
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, [self determineScrollViewHeight:numContacts] - 142);
     self.scrollView.backgroundColor = [UIColor colorWithRed:0.847 green:0.847 blue:0.847 alpha:1] /*#d8d8d8*/;
     [self.view addSubview:self.scrollView];
     [self setupHeader:matchItem.shortName];
@@ -54,6 +54,24 @@
     
     
     [self setupResourceTableView:self.isTopic];
+}
+
+-(int)determineScrollViewHeight:(int)numContacts{
+
+    if ([SDiPhoneVersion deviceSize] == iPhone35inch){
+        return self.view.frame.size.height + 88 + (130 * numContacts);
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone4inch){
+        return self.view.frame.size.height + (130 * numContacts);
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone47inch){
+        return self.view.frame.size.height - 99 + (130 * numContacts);
+    }
+    else if([SDiPhoneVersion deviceSize] == iPhone55inch){
+        return self.view.frame.size.height - 168 + (130 * numContacts);
+    }
+    
+    return self.view.frame.size.height + (130 * numContacts);
 }
 
 -(void)setupHeader:(NSString*) picName{
